@@ -13,7 +13,7 @@ public class Greet implements GreetMethods{
 
     private Map<String, String> greetedNames = new HashMap<>();
 
-    private final Languages languages ;
+    Languages languages;
     private String userName;
 
 
@@ -32,7 +32,17 @@ public class Greet implements GreetMethods{
                 greetedNames.put(username, language);
             }
         }
-        //check if entered language is true increment the counter and return greetings
+        /*
+        check if entered language is true increment the counter and return greetings
+        if
+           language == languages.IsiXhosa
+                counter ++;
+                return language.getLang() + " " + username
+        */
+        if (language == String.valueOf(languages.Isixhosa)){
+            return languages.getLang() + " " + username;
+        }
+
 
 
         return null;
