@@ -5,7 +5,6 @@ import java.util.Map;
 
 public class Greet implements GreetMethods{
 
-
     /*
     Define a linkList to hold an name and with selected language
     Define a property called username and language enum as an Object
@@ -13,8 +12,10 @@ public class Greet implements GreetMethods{
      */
 
     private Map<String, String> greetedNames = new HashMap<>();
-    private final Languages languages;
+
+    private final Languages languages ;
     private String userName;
+
 
     public Greet(String userName, Languages languages){
         this.userName = userName;
@@ -26,13 +27,13 @@ public class Greet implements GreetMethods{
     public String greetUser(String username, String language) {
 
         if (username != "") {
-//            username = userName;
-//            if (greetedNames.containsKey(username)) {
+            username = userName;
+            if (!greetedNames.containsKey(username)) {
                 greetedNames.put(username, language);
             }
-//        }
-
+        }
         //check if entered language is true increment the counter and return greetings
+
 
         return null;
     }
@@ -50,9 +51,4 @@ public class Greet implements GreetMethods{
     @Override
     public void help() {
     }
-
-//    @Override
-//    public Languages languages() {
-//        return lang;
-//    }
 }
