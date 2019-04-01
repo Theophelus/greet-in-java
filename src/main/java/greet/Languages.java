@@ -3,7 +3,7 @@ package greet;
 public enum Languages {
     Isixhosa("Molo"),
     English("Hello"),
-    IsZulu("Dumela");
+    IsiZulu("Sawubona");
 
     //Define a lang variable to Store data
     private String lang;
