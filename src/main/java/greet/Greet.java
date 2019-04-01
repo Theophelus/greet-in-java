@@ -1,6 +1,6 @@
 package greet;
 
-public class Greet implements GreetMethods{
+public class  Greet implements GreetMethods{
 
     private String username;
     Languages languages; // Enum accessor inside this class
@@ -9,6 +9,7 @@ public class Greet implements GreetMethods{
     public String greetUser(String language, String userName) {
 
         if (userName != "") this.username = userName;
+
         switch (Languages.valueOf(language)) {
             case Isixhosa:
                 return  Languages.valueOf(language).getLang() + ", " + username;
