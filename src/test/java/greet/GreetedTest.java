@@ -19,4 +19,17 @@ public class GreetedTest {
         assertEquals(4, greeted.getGreetedUsersSize());
 
     }
+
+    @Test
+    public void shouldBeAbleToGetAllUsersInTheMap(){
+        Greeted greeted = new Greeted();
+        //Push names into the hashMap
+        greeted.setGreetedUsers("Anele");
+        greeted.setGreetedUsers("Mbali");
+        greeted.setGreetedUsers("Yoland");
+        greeted.setGreetedUsers("Zenna G");
+
+//        assertEquals({}, greeted.getUserName());
+
+    }
 }

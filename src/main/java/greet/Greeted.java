@@ -17,6 +17,7 @@ public class Greeted {
 //
         if (this.userName != "") this.userName = userName;
         /*
+        get value of specific key
         Check if user already in a Map, if not add it
         else if already exists increment the counter.
          */
@@ -35,10 +36,23 @@ public class Greeted {
          */
     }
 
+
     //Define a getter method for to be able to get size of the hashMap
     public int getGreetedUsersSize() {
-//        System.out.println(greetedUsers.size());
         return greetedUsers.size();
     }
+
+    //Define a method to return all the names inside the list
+    public Map<String, Integer> getUserName (){
+        //get the value of specific key
+//        Integer users = greetedUsers.get(userName);
+        //Loop through the list to print every name in the list
+//        for (Map.Entry<String, Integer> i: greetedUsers.entrySet()) {
+
+//        }
+        return greetedUsers;
+    }
+
+
 }
 
