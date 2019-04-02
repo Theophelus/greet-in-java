@@ -14,8 +14,9 @@ public class GreetedTest {
         //Push names into the hashMap
         greeted.setGreetedUsers("Anele");
         greeted.setGreetedUsers("Mbali");
-        greeted.setGreetedUsers("Anele");
-        assertEquals(2, greeted.getGreetedUsersSize());
+        greeted.setGreetedUsers("Yoland");
+        greeted.setGreetedUsers("Zenna G");
+        assertEquals(4, greeted.getGreetedUsersSize());
 
     }
 }
