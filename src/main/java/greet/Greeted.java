@@ -45,14 +45,13 @@ public class Greeted {
     //Define a method to return all the names inside the list
     public Map<String, Integer> getUserName (){
         //get the value of specific key
-//        Integer users = greetedUsers.get(userName);
-        //Loop through the list to print every name in the list
-//        for (Map.Entry<String, Integer> i: greetedUsers.entrySet()) {
+
+//        for (Map.Entry<String, Integer> i: greetedUsers.entrySet()){
+
+//            return greetedUsers.get(i);
 
 //        }
         return greetedUsers;
     }
-
-
 }
 

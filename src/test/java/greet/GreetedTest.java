@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GreetedTest {
 
     @Test
-    public void shouldBeAbleToCountUsersInMap(){
+    public void shouldBeAbleToCountUsersInMap() {
 
         //Define an instance of greeted class
         Greeted greeted = new Greeted();
@@ -21,15 +21,15 @@ public class GreetedTest {
     }
 
     @Test
-    public void shouldBeAbleToGetAllUsersInTheMap(){
+    public void shouldBeAbleToGetAllUsersInTheMap() {
         Greeted greeted = new Greeted();
         //Push names into the hashMap
         greeted.setGreetedUsers("Anele");
+        greeted.setGreetedUsers("Anele");
+        greeted.setGreetedUsers("Anele");
+
         greeted.setGreetedUsers("Mbali");
-        greeted.setGreetedUsers("Yoland");
-        greeted.setGreetedUsers("Zenna G");
-
-//        assertEquals({}, greeted.getUserName());
-
+        System.out.println(greeted.getUserName());
+        assertEquals(greeted.getUserName(), greeted.getUserName());
     }
 }
