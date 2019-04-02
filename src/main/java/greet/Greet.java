@@ -22,17 +22,17 @@ public class  Greet implements GreetMethods{
         }
     }
 
-    @Override
-    public String greeted() {
-        return null;
-    }
-
-    @Override
-    public void exit() {
-
-    }
-
-    @Override
-    public void help() {
-    }
+//    @Override
+//    public String greeted() {
+//        return null;
+//    }
+//
+//    @Override
+//    public void exit() {
+//
+//    }
+//
+//    @Override
+//    public void help() {
+//    }
 }
