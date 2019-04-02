@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27fb81b3-d629-4eed-ab0c-47af49aceca6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/greet/GreetedTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/greet/Greeted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greet/Greeted.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/greet/greetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/greet/GreetTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/greet/Greet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/greet/Greet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/greet/GreetMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/greet/GreetMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/greet/Greeted.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/greet/Greeted.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-greet.greetTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-greet.greetTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/greet.greetTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/greet.greetTests.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,11 +33,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetTests.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetedTest.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,12 +118,12 @@
         <option value="$PROJECT_DIR$/src/main/java/Languages.java" />
         <option value="$PROJECT_DIR$/src/main/java/Greet.java" />
         <option value="$PROJECT_DIR$/src/main/java/greet/Languages.java" />
-        <option value="$PROJECT_DIR$/src/test/java/greet/GreetedTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/greet/Greet.java" />
         <option value="$PROJECT_DIR$/src/main/java/greet/GreetMethods.java" />
         <option value="$PROJECT_DIR$/src/main/java/greet/Greeted.java" />
         <option value="$PROJECT_DIR$/src/test/java/greet/greetTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/greet/GreetTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/greet/GreetedTest.java" />
       </list>
     </option>
   </component>
@@ -221,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GreetTests">
+  <component name="RunManager" selected="JUnit.GreetedTest">
     <configuration name="GreetTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <extension name="coverage">
@@ -248,22 +254,6 @@
       <option name="PACKAGE_NAME" value="greet" />
       <option name="MAIN_CLASS_NAME" value="greet.GreetTests" />
       <option name="METHOD_NAME" value="shouldBeAbleToGreetUserInIsiXhosa" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GreetTests.shouldBeAbleToSetUsersInTheHashMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="greet-in-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="greet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="greet" />
-      <option name="MAIN_CLASS_NAME" value="greet.GreetTests" />
-      <option name="METHOD_NAME" value="shouldBeAbleToSetUsersInTheHashMap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -300,13 +290,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GreetedTest.shouldBeAbleToCountUsersInMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="greet-in-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="greet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="greet" />
+      <option name="MAIN_CLASS_NAME" value="greet.GreetedTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToCountUsersInMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GreetedTest" />
+        <item itemvalue="JUnit.GreetedTest.shouldBeAbleToCountUsersInMap" />
         <item itemvalue="JUnit.GreetTests" />
         <item itemvalue="JUnit.GreetedTest.checkIfAbleToAddUser" />
-        <item itemvalue="JUnit.GreetedTest" />
         <item itemvalue="JUnit.GreetTests.shouldBeAbleToGreetUserInIsiXhosa" />
-        <item itemvalue="JUnit.GreetTests.shouldBeAbleToSetUsersInTheHashMap" />
       </list>
     </recent_temporary>
   </component>
@@ -428,13 +434,6 @@
     <entry file="file://$PROJECT_DIR$/greet-in-java.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/greet/GreetMethods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -475,8 +474,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetTests.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
