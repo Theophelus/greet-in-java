@@ -9,13 +9,13 @@ public class GreetedTest {
     @Test
     public void shouldBeAbleToCountUsersInMap(){
 
-
         //Define an instance of greeted class
         Greeted greeted = new Greeted();
         //Push names into the hashMap
         greeted.setGreetedUsers("Anele");
-//        greeted.setGreetedUsers("Mbali");
-        assertEquals(1, greeted.getGreetedUsersSize());
+        greeted.setGreetedUsers("Mbali");
+        greeted.setGreetedUsers("Anele");
+        assertEquals(2, greeted.getGreetedUsersSize());
 
     }
 }

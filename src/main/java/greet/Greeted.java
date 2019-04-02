@@ -12,16 +12,16 @@ public class Greeted {
 
     //Define a setter method that will be able to push users in the HashMap Map with specific.
 
-    public void setGreetedUsers(String user) {
+    public void setGreetedUsers(String userName) {
 
-        if (userName != "") userName = user;
-
-        Integer counter = greetedUsers.get(userName);
-
-        //Check if user already in a Map, if not add it
-        if (greetedUsers.containsKey(userName)) greetedUsers.put(userName, 1);
-        //else if already exists increment the counter.
-//        else greetedUsers.put(userName,counter + 1);
+//
+        if (this.userName != "") this.userName = userName;
+        /*
+        Check if user already in a Map, if not add it
+        else if already exists increment the counter.
+         */
+        Integer counter = greetedUsers.containsKey(this.userName) ? greetedUsers.get(this.userName) : 0;
+        greetedUsers.put(this.userName,counter +1);
     }
 
     //Define a getter method for to be able to get size of the hashMap
