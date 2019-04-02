@@ -21,11 +21,12 @@ public class Greeted {
         //Check if user already in a Map, if not add it
         if (greetedUsers.containsKey(userName)) greetedUsers.put(userName, 1);
         //else if already exists increment the counter.
-        else greetedUsers.put(userName,counter + 1);
+        else greetedUsers.put(userName,counter + 1)
+                ;
     }
 
     //Define a getter method for to be able to get size of the hashMap
-    public int getGreetedUsers() {
+    public int getGreetedUsersSize() {
 //        System.out.println(greetedUsers.size());
         return greetedUsers.size();
     }
