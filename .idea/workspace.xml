@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27fb81b3-d629-4eed-ab0c-47af49aceca6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/greet/Greet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greet/Greet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/greet/Greeted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greet/Greeted.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/greet/GreetedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/greet/GreetedTest.java" afterDir="false" />
     </list>
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetedTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            <state relative-caret-position="210">
+              <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,10 +38,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/greet/Greet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/greet/Languages.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/greet/Greeted.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+            <state relative-caret-position="387">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1344#1345#0" expanded="true" />
@@ -74,11 +93,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Languages.java" />
         <option value="$PROJECT_DIR$/src/main/java/Greet.java" />
         <option value="$PROJECT_DIR$/src/main/java/greet/Languages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/greet/Greet.java" />
         <option value="$PROJECT_DIR$/src/main/java/greet/GreetMethods.java" />
         <option value="$PROJECT_DIR$/src/test/java/greet/greetTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/greet/GreetTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/greet/Greeted.java" />
+        <option value="$PROJECT_DIR$/src/main/java/greet/Greet.java" />
         <option value="$PROJECT_DIR$/src/test/java/greet/GreetedTest.java" />
       </list>
     </option>
@@ -103,7 +122,53 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="greet" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -212,10 +277,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.GreetedTest.shouldBeAbleToGetAllUsersInTheMap" />
+        <item itemvalue="JUnit.GreetTests" />
         <item itemvalue="JUnit.GreetedTest.shouldBeAbleToRemoveSpecificUser" />
         <item itemvalue="JUnit.GreetedTest.shouldBeAbleToCountUsersInMap" />
         <item itemvalue="JUnit.GreetedTest" />
-        <item itemvalue="JUnit.GreetTests" />
       </list>
     </recent_temporary>
   </component>
@@ -233,42 +298,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 05m 09s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    <history-entry file="GreetedTest_shouldBeAbleToGetAllUsersInTheMap - 2019.04.03 at 12h 24m 52s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToGetAllUsersInTheMap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 06m 54s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    <history-entry file="GreetTests - 2019.04.03 at 12h 36m 54s.xml">
+      <configuration name="GreetTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 10m 54s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    <history-entry file="GreetTests - 2019.04.03 at 12h 39m 03s.xml">
+      <configuration name="GreetTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 11m 14s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    <history-entry file="GreetTests - 2019.04.03 at 12h 39m 32s.xml">
+      <configuration name="GreetTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 46m 35s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    <history-entry file="GreetedTest_shouldBeAbleToGetAllUsersInTheMap - 2019.04.03 at 13h 02m 02s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToGetAllUsersInTheMap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 46m 58s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    <history-entry file="GreetedTest_shouldBeAbleToGetAllUsersInTheMap - 2019.04.03 at 13h 02m 53s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToGetAllUsersInTheMap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 47m 17s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    <history-entry file="GreetedTest_shouldBeAbleToGetAllUsersInTheMap - 2019.04.03 at 13h 03m 33s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToGetAllUsersInTheMap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 47m 38s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    <history-entry file="GreetedTest_shouldBeAbleToGetAllUsersInTheMap - 2019.04.03 at 13h 04m 19s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToGetAllUsersInTheMap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 56m 39s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    <history-entry file="GreetedTest_shouldBeAbleToGetAllUsersInTheMap - 2019.04.03 at 13h 05m 07s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToGetAllUsersInTheMap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 12h 01m 02s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    <history-entry file="GreetedTest_shouldBeAbleToGetAllUsersInTheMap - 2019.04.03 at 13h 05m 37s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToGetAllUsersInTheMap" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2804781" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2804781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -297,7 +362,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2804781" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2804781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -307,7 +372,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884902" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29895365" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29895365" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -337,23 +402,6 @@
     <entry file="file://$PROJECT_DIR$/greet-in-java.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/greet/Languages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/greet/GreetMethods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -368,13 +416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/greet/Greet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/function/Predicate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -382,10 +423,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/greet/Languages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/greet/Greet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/greet/Greeted.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state relative-caret-position="387">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1344#1345#0" expanded="true" />
@@ -398,8 +463,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="210">
+          <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

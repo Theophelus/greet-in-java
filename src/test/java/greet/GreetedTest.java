@@ -27,12 +27,10 @@ public class GreetedTest {
         greeted.setGreetedUsers("Anele");
         greeted.setGreetedUsers("Anele");
         greeted.setGreetedUsers("Anele");
-
         greeted.setGreetedUsers("Mbali");
         greeted.removeAllUsersInTheMap();
-
+        assertEquals(greeted.getGreetedUsers(), greeted.getGreetedUsers());
         System.out.println("HashMap successfully clear" + " " + greeted.getGreetedUsers());
-//        assertEquals(true, greeted.removeAllUsersInTheMap());
     }
 
     @Test

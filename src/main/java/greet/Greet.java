@@ -18,7 +18,7 @@ public class  Greet implements GreetMethods{
             case IsiZulu:
                 return  Languages.valueOf(language).getLang() + ", " + username;
             default:
-                return "";
+                return Languages.Isixhosa.getLang() + " " + username;
         }
     }
 

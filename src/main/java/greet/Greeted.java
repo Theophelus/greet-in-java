@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class Greeted {
+public class Greeted extends Greet {
 
     //Define a hashMap storage to hold each user with specific name and userName
     private Map<String, Integer> greetedUsers = new HashMap<>();
