@@ -1,11 +1,10 @@
 package greet;
 
-public class  Greet implements GreetMethods{
+public class  Greet {
 
     private String username;
     Languages languages; // Enum accessor inside this class
 
-    @Override
     public String greetUser(String language, String userName) {
 
         if (userName != "") this.username = userName;
@@ -21,18 +20,9 @@ public class  Greet implements GreetMethods{
                 return Languages.Isixhosa.getLang() + " " + username;
         }
     }
+    //Define a getter method that is going to get greet
 
-//    @Override
-//    public String greeted() {
-//        return null;
-//    }
-//
-//    @Override
-//    public void exit() {
-//
-//    }
-//
-//    @Override
-//    public void help() {
-//    }
+    public boolean getLanguages(String lang) {
+        return languages.getLang().equalsIgnoreCase(lang);
+    }
 }

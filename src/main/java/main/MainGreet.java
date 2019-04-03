@@ -1,4 +1,4 @@
-package greet;
+package main;
 //import java.util.Scanner;
 //package greet;
 class MainGreet {

@@ -10,12 +10,9 @@ public class Greeted extends Greet {
     private Map<String, Integer> greetedUsers = new HashMap<>();
     private String userName;
 
-
     //Define a setter method that will be able to push users in the HashMap Map with specific.
-
     public void setGreetedUsers(String userName) {
 
-//
         if (this.userName != "") this.userName = userName;
         /*
         Check if Map containKey, if true get the key n initialise it to zero
@@ -46,10 +43,8 @@ public class Greeted extends Greet {
         return greetedUsers;
     }
 
-
     //Define a method to remove specific  users inside the map
     public Map<String, Integer> removeSpecificUsersInsideTheMap(String userName){
-
         /*
         1) Get the iterator over the HashMap/create iterator
         2) Loop over the HashMap
@@ -57,7 +52,6 @@ public class Greeted extends Greet {
         4) If it exits remove it
         5) Return the HashMap
          */
-
         Iterator<String> user = greetedUsers.keySet().iterator();
         while (user.hasNext()) if (user.next().contains(userName)) user.remove();
         return greetedUsers;
@@ -66,7 +60,6 @@ public class Greeted extends Greet {
     //Define a method to remove all users
     public void removeAllUsersInTheMap(){
         greetedUsers.clear();
-//        getGreetedUsers().clear();
     }
 }
 
