@@ -29,7 +29,23 @@ public class GreetedTest {
         greeted.setGreetedUsers("Anele");
 
         greeted.setGreetedUsers("Mbali");
-        System.out.println(greeted.getUserName());
-        assertEquals(greeted.getUserName(), greeted.getUserName());
+        System.out.println(greeted.getGreetedUsers());
+        assertEquals(greeted.getGreetedUsers(), greeted.getGreetedUsers());
+    }
+
+    @Test
+    public void shouldBeAbleToRemoveSpecificUser(){
+
+        Greeted greeted = new Greeted();
+        greeted.setGreetedUsers("Anele");
+        greeted.setGreetedUsers("Anele");
+        greeted.setGreetedUsers("Anele");
+//        greeted.
+
+        greeted.setGreetedUsers("Mbali");
+
+        System.out.println(greeted.removeAllUsersInsideTheMap("Mbali"));
+
+        assertEquals(greeted.getGreetedUsers(), greeted.removeAllUsersInsideTheMap("Mbali"));
     }
 }
