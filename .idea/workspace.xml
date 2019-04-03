@@ -27,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetedTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+            <state relative-caret-position="298">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/greet/Greeted.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
+            <state relative-caret-position="357">
+              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1344#1345#0" expanded="true" />
@@ -78,8 +78,8 @@
         <option value="$PROJECT_DIR$/src/main/java/greet/GreetMethods.java" />
         <option value="$PROJECT_DIR$/src/test/java/greet/greetTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/greet/GreetTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/greet/GreetedTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/greet/Greeted.java" />
+        <option value="$PROJECT_DIR$/src/test/java/greet/GreetedTest.java" />
       </list>
     </option>
   </component>
@@ -130,7 +130,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GreetedTest.shouldBeAbleToRemoveSpecificUser">
+  <component name="RunManager" selected="JUnit.GreetedTest.shouldBeAbleToGetAllUsersInTheMap">
     <configuration name="GreetTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <extension name="coverage">
@@ -211,8 +211,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GreetedTest.shouldBeAbleToRemoveSpecificUser" />
         <item itemvalue="JUnit.GreetedTest.shouldBeAbleToGetAllUsersInTheMap" />
+        <item itemvalue="JUnit.GreetedTest.shouldBeAbleToRemoveSpecificUser" />
         <item itemvalue="JUnit.GreetedTest.shouldBeAbleToCountUsersInMap" />
         <item itemvalue="JUnit.GreetedTest" />
         <item itemvalue="JUnit.GreetTests" />
@@ -233,34 +233,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 54m 30s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 55m 28s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 55m 57s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 56m 21s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 56m 40s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 57m 47s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 00m 44s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 04m 25s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 05m 09s.xml">
       <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
     <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 06m 54s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 10m 54s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 11m 14s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 46m 35s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 46m 58s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 47m 17s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 47m 38s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 56m 39s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 12h 01m 02s.xml">
       <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -384,8 +384,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/greet/Greeted.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
+        <state relative-caret-position="357">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1344#1345#0" expanded="true" />
@@ -398,8 +398,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        <state relative-caret-position="298">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

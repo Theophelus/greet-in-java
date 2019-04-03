@@ -33,7 +33,6 @@ public class Greeted {
             else
                 //increment the key value by 1
                 greetedUsers.put(this.userName, counter + 1);
-
          */
     }
 
@@ -49,12 +48,25 @@ public class Greeted {
 
 
     //Define a method to remove specific  users inside the map
-    public Map<String, Integer> removeAllUsersInsideTheMap(String userName){
+    public Map<String, Integer> removeSpecificUsersInsideTheMap(String userName){
+
+        /*
+        1) Get the iterator over the HashMap/create iterator
+        2) Loop over the HashMap
+        3) Check if current key is the HashMap
+        4) If it exits remove it
+        5) Return the HashMap
+         */
 
         Iterator<String> user = greetedUsers.keySet().iterator();
         while (user.hasNext()) if (user.next().contains(userName)) user.remove();
         return greetedUsers;
 
+    }
+    //Define a method to remove all users
+    public void removeAllUsersInTheMap(){
+        greetedUsers.clear();
+//        getGreetedUsers().clear();
     }
 }
 
