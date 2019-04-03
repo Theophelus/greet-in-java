@@ -1,6 +1,7 @@
 package greet;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class Greeted {
@@ -47,17 +48,13 @@ public class Greeted {
     }
 
 
-    //Define a method to remove all users inside the map
+    //Define a method to remove specific  users inside the map
     public Map<String, Integer> removeAllUsersInsideTheMap(String userName){
-//        for (Map.Entry<String, Integer> i: greetedUsers.entrySet()) {
-//            if (i.equals(userName)) {
-//                greetedUsers.remove(i);
-//            }
-//       }
 
-        return null;
+        Iterator<String> user = greetedUsers.keySet().iterator();
+        while (user.hasNext()) if (user.next().contains(userName)) user.remove();
+        return greetedUsers;
+
     }
-
-
 }
 

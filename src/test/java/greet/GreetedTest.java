@@ -40,12 +40,12 @@ public class GreetedTest {
         greeted.setGreetedUsers("Anele");
         greeted.setGreetedUsers("Anele");
         greeted.setGreetedUsers("Anele");
-//        greeted.
-
         greeted.setGreetedUsers("Mbali");
 
-        System.out.println(greeted.removeAllUsersInsideTheMap("Mbali"));
+        System.out.println("This user have been removed from the map" + " " + greeted.removeAllUsersInsideTheMap("Mbali"));
+        assertEquals( greeted.getGreetedUsers(), greeted.removeAllUsersInsideTheMap("Mbali"));
 
-        assertEquals(greeted.getGreetedUsers(), greeted.removeAllUsersInsideTheMap("Mbali"));
+        System.out.println("Check how many users in the map" + " " + greeted.getGreetedUsers());
+
     }
 }

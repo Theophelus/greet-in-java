@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27fb81b3-d629-4eed-ab0c-47af49aceca6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/greet/Greeted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/greet/Greeted.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/greet/GreetedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/greet/GreetedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/greet/Greeted.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/greet/Greeted.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/greet/GreetedTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/greet/GreetedTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetedTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="267">
+              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/greet/Greeted.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+            <state relative-caret-position="312">
+              <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1344#1345#0" expanded="true" />
@@ -133,7 +130,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GreetedTest.shouldBeAbleToCountUsersInMap">
+  <component name="RunManager" selected="JUnit.GreetedTest.shouldBeAbleToRemoveSpecificUser">
     <configuration name="GreetTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <extension name="coverage">
@@ -214,9 +211,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GreetedTest.shouldBeAbleToCountUsersInMap" />
         <item itemvalue="JUnit.GreetedTest.shouldBeAbleToRemoveSpecificUser" />
         <item itemvalue="JUnit.GreetedTest.shouldBeAbleToGetAllUsersInTheMap" />
+        <item itemvalue="JUnit.GreetedTest.shouldBeAbleToCountUsersInMap" />
         <item itemvalue="JUnit.GreetedTest" />
         <item itemvalue="JUnit.GreetTests" />
       </list>
@@ -236,35 +233,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.02 at 17h 58m 32s.xml">
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 54m 30s.xml">
       <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.02 at 17h 59m 21s.xml">
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 55m 28s.xml">
       <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.02 at 18h 19m 21s.xml">
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 55m 57s.xml">
       <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.02 at 18h 20m 48s.xml">
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 56m 21s.xml">
       <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.02 at 18h 21m 09s.xml">
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 56m 40s.xml">
       <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.02 at 18h 21m 40s.xml">
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 10h 57m 47s.xml">
       <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToCountUsersInMap - 2019.04.03 at 09h 36m 36s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToCountUsersInMap" configurationId="JUnit" />
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 00m 44s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToCountUsersInMap - 2019.04.03 at 09h 39m 27s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToCountUsersInMap" configurationId="JUnit" />
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 04m 25s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToCountUsersInMap - 2019.04.03 at 09h 39m 51s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToCountUsersInMap" configurationId="JUnit" />
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 05m 09s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GreetedTest_shouldBeAbleToCountUsersInMap - 2019.04.03 at 09h 41m 18s.xml">
-      <configuration name="GreetedTest.shouldBeAbleToCountUsersInMap" configurationId="JUnit" />
+    <history-entry file="GreetedTest_shouldBeAbleToRemoveSpecificUser - 2019.04.03 at 11h 06m 54s.xml">
+      <configuration name="GreetedTest.shouldBeAbleToRemoveSpecificUser" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -378,26 +375,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetedTest.java">
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/function/Predicate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/greet/Greeted.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+        <state relative-caret-position="312">
+          <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1344#1345#0" expanded="true" />
             <element signature="e#1386#1387#0" expanded="true" />
             <element signature="e#1416#1417#0" expanded="true" />
             <element signature="e#1451#1452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/greet/GreetedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
