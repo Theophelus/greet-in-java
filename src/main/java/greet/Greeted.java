@@ -13,7 +13,7 @@ public class Greeted {
     private String userName;
 
     //Define a setter method that will be able to push users in the HashMap Map with specific.
-    public void setGreetedUsers(String userName) {
+    public String setGreetedUsers(String userName) {
 
         if (this.userName != "") this.userName = userName;
         /*
@@ -34,6 +34,7 @@ public class Greeted {
                 //increment the key value by 1
                 greetedUsers.put(this.userName, counter + 1);
          */
+        return this.userName;
     }
 
     //Define a getter method for to be able to get size of the hashMap
