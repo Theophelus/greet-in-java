@@ -1,11 +1,15 @@
 package main;
-//import java.util.Scanner;
+
+import greet.Commands;
+
 //package greet;
 class MainGreet {
 
 public static void main(String[] args){
-    System.out.println("*** Greeting Console Applications ***");
-//        Scanner myObj = new Scanner(System.in);
+    //Define an instance of Commands class
+    Commands commands = new Commands();
+    commands.runCommands();
+
     }
 }
 

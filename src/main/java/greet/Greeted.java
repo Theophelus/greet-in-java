@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class Greeted extends Greet {
+public class Greeted {
+
+//    Greet greet = new Greet();
 
     //Define a hashMap storage to hold each user with specific name and userName
     private Map<String, Integer> greetedUsers = new HashMap<>();
@@ -20,6 +22,7 @@ public class Greeted extends Greet {
          */
         Integer counter = greetedUsers.containsKey(this.userName) ? greetedUsers.get(this.userName) : 0;
         greetedUsers.put(this.userName,counter +1);
+
         /*
         //Second approach:
         //get value of specific key
@@ -55,7 +58,6 @@ public class Greeted extends Greet {
         Iterator<String> user = greetedUsers.keySet().iterator();
         while (user.hasNext()) if (user.next().contains(userName)) user.remove();
         return greetedUsers;
-
     }
     //Define a method to remove all users
     public void removeAllUsersInTheMap(){

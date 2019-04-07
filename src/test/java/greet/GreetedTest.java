@@ -18,10 +18,22 @@ public class GreetedTest {
         greeted.setGreetedUsers("Zenna G");
         assertEquals(4, greeted.getGreetedUsersSize());
 
+//        Greet greet = new Greet();
+//        greet.greetUser("Isixhosa","Sphokazi");
+//        assertEquals(greeted.getGreetedUsersSize(), 5);
+
     }
 
     @Test
-    public void shouldBeAbleToGetAllUsersInTheMap() {
+    public void shouldBeAbleToGreetUserAndAddItToTheMap(){
+
+
+    }
+
+
+
+    @Test
+    public void shouldBeAbleToRemoveAllUserInTheMap() {
         Greeted greeted = new Greeted();
         //Push names into the hashMap
         greeted.setGreetedUsers("Anele");
@@ -29,7 +41,7 @@ public class GreetedTest {
         greeted.setGreetedUsers("Anele");
         greeted.setGreetedUsers("Mbali");
         greeted.removeAllUsersInTheMap();
-        assertEquals(greeted.getGreetedUsers(), greeted.getGreetedUsers());
+        assertEquals(greeted.getGreetedUsers().size(), 0);
         System.out.println("HashMap successfully clear" + " " + greeted.getGreetedUsers());
     }
 
@@ -41,7 +53,7 @@ public class GreetedTest {
         greeted.setGreetedUsers("Anele");
         greeted.setGreetedUsers("Anele");
         greeted.setGreetedUsers("Mbali");
-
+        greeted.setGreetedUsers("Unalo");
         System.out.println("This user have been removed from the map" + " " + greeted.removeSpecificUsersInsideTheMap("Mbali"));
         assertEquals( greeted.getGreetedUsers(), greeted.removeSpecificUsersInsideTheMap("Mbali"));
 
