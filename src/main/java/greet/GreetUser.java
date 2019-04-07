@@ -9,4 +9,9 @@ public class GreetUser {
         this.greet = greet;
         this.greeted = greeted;
     }
+
+    public String greet(String userName) {
+        if (userName != "") greeted.setGreetedUsers(userName);
+        return greet.greetUser(Languages.valueOf(userName).getLang(), userName);
+    }
 }
