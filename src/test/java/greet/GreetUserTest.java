@@ -25,4 +25,22 @@ public class GreetUserTest {
 
         assertEquals( 2, greetUser.getGreeted().size());
     }
+
+    @Test
+    public void shouldBeAbleToReturnTheSizeOfeTheMap(){
+
+        GreetUser greetUser = new GreetUser();
+        greetUser.greet("Yegan", "Isixhosa");
+        greetUser.greet("Ace", "English");
+        greetUser.greet("Anele", "IsiZulu");
+        greetUser.greet("Thabang", "Isixhosa");
+        greetUser.greet("Ace", "English");
+        greetUser.greet("Mbali", "IsiZulu");
+
+        System.out.println(greetUser.getMapSize());
+
+        assertEquals(greetUser.getMapSize(), greetUser.getGreeted().size());
+    }
+
+
 }

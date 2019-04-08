@@ -30,8 +30,6 @@ public class GreetedTest {
 
     }
 
-
-
     @Test
     public void shouldBeAbleToRemoveAllUserInTheMap() {
         Greeted greeted = new Greeted();

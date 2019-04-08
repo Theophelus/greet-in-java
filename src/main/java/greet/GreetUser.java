@@ -17,4 +17,8 @@ public class GreetUser {
     public Map<String, Integer> getGreeted() {
         return greeted.getGreetedUsers();
     }
+
+    public short getMapSize() {
+        return (short) greeted.getGreetedUsersSize();
+    }
 }
