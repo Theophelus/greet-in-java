@@ -9,16 +9,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GreetUserTest {
     @Test
     public void shouldBeAbleToGreetUser(){
-        GreetUser greetUser = new GreetUser("Isixhosa", "Anele");
-        assertEquals("Hello, Yegan", greetUser.greet("Yegan"));
+        GreetUser greetUser = new GreetUser();
+        assertEquals("Hello, Yegan", greetUser.greet("Yegan","English"));
     }
-//
-////    @Test
-////    public void shouldGetOneForUserCounter(){
-////        GreetUser greetUser = new GreetUser(greet, greeted);
-////        greetUser.greet("Yegan");
-////        assertEquals("Yegan greet count: 1", greetUser.greeted("Yegan"));
-////
-////    }
 
+    @Test
+    public void shouldGetOneForUserCounter(){
+        GreetUser greetUser = new GreetUser();
+
+        greetUser.greet("Yegan", "Isixhosa");
+        greetUser.greet("Ace", "English");
+        greetUser.greet("Ace", "IsiZulu");
+
+        System.out.println(greetUser.getGreeted());
+
+        assertEquals( 2, greetUser.getGreeted().size());
+    }
 }

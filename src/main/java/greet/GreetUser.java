@@ -1,17 +1,20 @@
 package greet;
 
+import java.util.Map;
+
 public class GreetUser {
 
-    private Greet greet;
-    private Greeted greeted;
+    Greet greets = new Greet();
+    Greeted greeted = new Greeted();
 
-    public  GreetUser(Greet greet, Greeted greeted){
-        this.greet = greet;
-        this.greeted = greeted;
+
+    public String greet(String userName, String lang) {
+        if (userName != "") greeted.setGreetedUsers(userName);
+        return greets.greetUser(lang, userName);
     }
 
-    public String greet(String userName) {
-        if (userName != "") greeted.setGreetedUsers(userName);
-        return greet.greetUser(Languages.valueOf(userName).getLang(), userName);
+    //Define a method to get the size of the map
+    public Map<String, Integer> getGreeted() {
+        return greeted.getGreetedUsers();
     }
 }

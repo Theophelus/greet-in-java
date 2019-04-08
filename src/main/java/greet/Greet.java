@@ -22,6 +22,11 @@ public class  Greet {
         }
     }
 
+
+    public String getUsername() {
+        return username;
+    }
+
     //Define a getter method that is going to get greet
     public boolean getLanguages(String lang) {
         return languages.getLang().equalsIgnoreCase(lang);
