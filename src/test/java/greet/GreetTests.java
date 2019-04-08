@@ -13,7 +13,6 @@ public class GreetTests {
     public void shouldBeAbleToGreetUserInIsiXhosa(){
 
         assertEquals("Molo, Anele", greet.greetUser("Isixhosa", "Anele"));
-
     }
     @Test
     public void shouldBeAbleToGreetUserInEnglish(){

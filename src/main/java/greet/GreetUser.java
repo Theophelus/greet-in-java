@@ -21,4 +21,13 @@ public class GreetUser {
     public short getMapSize() {
         return (short) greeted.getGreetedUsersSize();
     }
+
+    public void clearAllUsersInTheMap() {
+        greeted.removeAllUsersInTheMap();
+    }
+
+    public Map<String, Integer> deleteSpecificUsersInsideTheMap(String userName) {
+
+        return greeted.removeSpecificUsersInsideTheMap(userName);
+    }
 }
