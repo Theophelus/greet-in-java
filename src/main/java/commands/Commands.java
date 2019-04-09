@@ -3,7 +3,6 @@ package commands;
 import greet.GreetUser;
 import greet.Greeted;
 
-import java.util.Map;
 import java.util.Scanner;
 
 public class Commands extends Greeted {
@@ -17,38 +16,37 @@ public class Commands extends Greeted {
         greets();
     }
     private void greets() {
-//        System.out.println("PlEASE ENTER ONE OF THE COMMANDS");
-//        System.out.println("1) Greet");
-//        System.out.println("2) Greeted");
-//        System.out.println("3) Greeted followed by < username >");
-//        System.out.println("4) Clear");
-//        System.out.println("5) Clear followed by < username >");
-
         //Define a variable to control the loop
         Boolean selection = true;
 
         while (selection) {
+
             System.out.print("Enter A Command: ");
             String enterCommand = input.nextLine();
 
+
             String[] commandUser = enterCommand.trim().split(" ");
+            String command = commandUser[0].trim();
 
-            if (commandUser.length > 1) {
-                String command = commandUser[0].trim();
-                if ("greet".equals(command)) {
-                    String userName = commandUser[1];
-                    String lang = commandUser[2];
-//                    greetUser.greet(userName, lang);
+            if ("greet".equals(command) && commandUser.length > 1) {
+                String userName = commandUser[1];
+                String lang = commandUser[2];
+                System.out.println(greetUser.greet(userName, lang));
 
-                    System.out.println(greetUser.greet(userName, lang));
-                    System.out.println(greetUser.getMapSize());
-                    System.out.println(greetUser.getGreeted());
-
-                } else if ("greeted".equals(command)){
-                   Map<String, Integer> getUsers = greetUser.getGreeted();
-                    System.out.println("All Greeted Users In the System:" + "\n" + getUsers);
-                }
+                System.out.println("Counter: " + " " + greetUser.getMapSize());
+                System.out.println("Greeted Users: \n" + " " + greetUser.getGreeted());
             }
+            else if ("greeted".equals(command))
+                System.out.println("All Greeted Users: \n" + " " + greetUser.getGreeted());
+
+
+//            if ("clear".equals(command) && commandUser.length > 2)
+//            {
+//                String userName = commandUser[1];
+//                greetUser.deleteSpecificUsersInsideTheMap(userName);
+//            }else
+//                greetUser.clearAllUsersInTheMap();
+//                System.out.println("All Users Have Been Cleared..!");
         }
     }
 
@@ -65,7 +63,11 @@ public class Commands extends Greeted {
     }
 
 }
+//            {
 
+//                String userName = commandUser[1];
+//                System.out.println(greetUser.getSpecificUser(userName));
+//            }else
 
 
 

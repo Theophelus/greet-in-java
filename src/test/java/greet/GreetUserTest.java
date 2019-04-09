@@ -21,7 +21,7 @@ public class GreetUserTest {
         greetUser.greet("Ace", "English");
         greetUser.greet("Ace", "IsiZulu");
 
-        System.out.println(greetUser.getGreeted());
+//        System.out.println(greetUser.getGreeted());
 
         assertEquals( 2, greetUser.getGreeted().size());
     }
@@ -37,9 +37,9 @@ public class GreetUserTest {
         greetUser.greet("Ace", "English");
         greetUser.greet("Mbali", "IsiZulu");
 
-        System.out.println(greetUser.getMapSize());
+//        System.out.println(greetUser.getMapSize());
 
-        assertEquals(greetUser.getMapSize(), greetUser.getGreeted().size());
+        assertEquals(5, greetUser.getMapSize());
     }
     @Test
     public void shouldBeToClearHashMap() {
@@ -51,7 +51,7 @@ public class GreetUserTest {
         greetUser.greet("Mbali","English");
         greetUser.clearAllUsersInTheMap();
         assertEquals(greetUser.getGreeted().size(), 0);
-        System.out.println("HashMap successfully clear" + " " + greetUser.getGreeted());
+//        System.out.println("HashMap successfully clear" + " " + greetUser.getGreeted());
     }
 
     @Test
@@ -64,12 +64,11 @@ public class GreetUserTest {
         greetUser.greet("Anele","Isixhosa");
         greetUser.greet("Yolanda","English");
         greetUser.greet("Mbali","English");
-        System.out.println(greetUser.getGreeted());
-        System.out.println("This user have been removed from the map" + " " + greetUser.deleteSpecificUsersInsideTheMap("Yolanda"));
+//        System.out.println(greetUser.getGreeted());
+//        System.out.println("This user have been removed from the map" + " " + greetUser.deleteSpecificUsersInsideTheMap("Yolanda"));
         assertEquals( greetUser.getGreeted(), greetUser.deleteSpecificUsersInsideTheMap("Yolanda"));
-        System.out.println("Check how many users in the map" + " " + greetUser.getMapSize());
+//        System.out.println("Check how many users in the map" + " " + greetUser.getMapSize());
 
     }
-
 
 }

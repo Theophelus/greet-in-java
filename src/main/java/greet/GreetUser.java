@@ -14,7 +14,10 @@ public class GreetUser {
     }
 
     //Define a method to get the size of the map
-    public Map<String, Integer> getGreeted() {
+    public Map<String, Integer> getGreeted()
+    {
+//        System.out.println(greeted.getGreetedUsers());
+
         return greeted.getGreetedUsers();
     }
 

@@ -40,7 +40,7 @@ public class GreetedTest {
         greeted.setGreetedUsers("Mbali");
         greeted.removeAllUsersInTheMap();
         assertEquals(greeted.getGreetedUsers().size(), 0);
-        System.out.println("HashMap successfully clear" + " " + greeted.getGreetedUsers());
+//        System.out.println("HashMap successfully clear" + " " + greeted.getGreetedUsers());
     }
 
     @Test
@@ -52,10 +52,10 @@ public class GreetedTest {
         greeted.setGreetedUsers("Anele");
         greeted.setGreetedUsers("Mbali");
         greeted.setGreetedUsers("Unalo");
-        System.out.println("This user have been removed from the map" + " " + greeted.removeSpecificUsersInsideTheMap("Mbali"));
+//        System.out.println("This user have been removed from the map" + " " + greeted.removeSpecificUsersInsideTheMap("Mbali"));
         assertEquals( greeted.getGreetedUsers(), greeted.removeSpecificUsersInsideTheMap("Mbali"));
 
-        System.out.println("Check how many users in the map" + " " + greeted.getGreetedUsersSize());
+//        System.out.println("Check how many users in the map" + " " + greeted.getGreetedUsersSize());
 
     }
 }
