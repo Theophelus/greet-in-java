@@ -32,28 +32,33 @@ public class Commands extends Greeted {
                 String userName = commandUser[1];
                 String lang = commandUser[2];
                 System.out.println(greetUser.greet(userName, lang));
-
                 System.out.println("Counter: " + " " + greetUser.getMapSize());
-                System.out.println("Greeted Users: \n" + " " + greetUser.getGreeted());
             }
 
-            else if ("greeted".equals(command) && commandUser.length > 1){
-                String userName = commandUser[1].toLowerCase();
-                System.out.println(greetUser.getSingleUser(userName));
-            }else
-                System.out.println("All Greeted Users: \n" + " " + greetUser.getGreeted());
+            else if ("greeted".equals(command)) {
+                if (commandUser.length > 1){
+                    String userName = commandUser[1].toLowerCase();
+                    System.out.println(greetUser.getSingleUser(userName));
+                }else {
+                    System.out.println("All Greeted Users: \n" + " " + greetUser.getGreeted());
+            }
+            }
 
-//            if ("clear".equals(command) && commandUser.length > 2)
-//            {
-//                String userName = commandUser[1];
-//                greetUser.deleteSpecificUsersInsideTheMap(userName);
-//            }else
-//                greetUser.clearAllUsersInTheMap();
-//                System.out.println("All Users Have Been Cleared..!");
+            else if ("clear".equals(command)) {
+                if (commandUser.length > 1){
+               String userName = commandUser[1];
+               greetUser.deleteSpecificUsersInsideTheMap(userName);
+                System.out.println(greetUser.getSingleUser(userName) + " " + "Have Been Deleted");
+
+           }else {
+                    greetUser.clearAllUsersInTheMap();
+                    System.out.println("All Users Have Been Cleared..!");
+                }
+            }
         }
     }
 
-    ////Define a method to for headers
+    //Define a method to for headers
     private void printMainHeader() {
         System.out.println("----------------------------------------------------------------------------------------");
         System.out.println("                             ***  WELCOME TO MY  ***                                    ");
@@ -66,11 +71,7 @@ public class Commands extends Greeted {
     }
 
 }
-//            {
 
-//                String userName = commandUser[1];
-//                System.out.println(greetUser.getSpecificUser(userName));
-//            }else
 
 
 
