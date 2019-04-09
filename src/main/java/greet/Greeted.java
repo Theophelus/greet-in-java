@@ -44,6 +44,11 @@ public class Greeted {
         return greetedUsers;
     }
 
+    //Define a method to get single user inside the map
+    public Integer getGreetedSingleUser(String userName){
+
+        return greetedUsers.get(userName);
+    }
     //Define a method to remove specific  users inside the map
     public Map<String, Integer> removeSpecificUsersInsideTheMap(String userName){
         /*

@@ -14,12 +14,13 @@ public class GreetUser {
     }
 
     //Define a method to get the size of the map
-    public Map<String, Integer> getGreeted()
-    {
-//        System.out.println(greeted.getGreetedUsers());
+    public Map<String, Integer> getGreeted() { return greeted.getGreetedUsers(); }
 
-        return greeted.getGreetedUsers();
+    //Define a method to get single user in the map
+    public Integer getSingleUser(String userName){
+        return greeted.getGreetedSingleUser(userName);
     }
+
 
     public short getMapSize() {
         return (short) greeted.getGreetedUsersSize();

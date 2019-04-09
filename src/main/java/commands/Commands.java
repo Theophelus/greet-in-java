@@ -36,9 +36,12 @@ public class Commands extends Greeted {
                 System.out.println("Counter: " + " " + greetUser.getMapSize());
                 System.out.println("Greeted Users: \n" + " " + greetUser.getGreeted());
             }
-            else if ("greeted".equals(command))
-                System.out.println("All Greeted Users: \n" + " " + greetUser.getGreeted());
 
+            else if ("greeted".equals(command) && commandUser.length > 1){
+                String userName = commandUser[1].toLowerCase();
+                System.out.println(greetUser.getSingleUser(userName));
+            }else
+                System.out.println("All Greeted Users: \n" + " " + greetUser.getGreeted());
 
 //            if ("clear".equals(command) && commandUser.length > 2)
 //            {
