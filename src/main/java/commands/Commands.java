@@ -35,6 +35,8 @@ public class Commands extends Greeted {
                 System.out.println("Counter: " + " " + greetUser.getMapSize());
             }
 
+            else if ("help".equals(command) && commandUser.length > 1) greetUser.help();
+
             else if ("greeted".equals(command)) {
                 if (commandUser.length > 1){
                     String userName = commandUser[1].toLowerCase();
