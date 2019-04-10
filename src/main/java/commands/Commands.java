@@ -2,6 +2,7 @@ package commands;
 
 import greet.GreetUser;
 import greet.Greeted;
+import greet.Languages;
 
 import java.util.Scanner;
 
@@ -28,9 +29,19 @@ public class Commands extends Greeted {
             String[] commandUser = enterCommand.trim().split(" ");
             String command = commandUser[0].trim();
 
-            if ("greet".equals(command) && commandUser.length > 1) {
+
+            if ("greet".equalsIgnoreCase(command) && commandUser.length == 2){
+                String userName = commandUser[1].toUpperCase();
+                String greetType = "Isixhosa";
+                greetUser.greet(userName, greetType);
+                Languages.valueOf(greetType);
+                System.out.println(greetUser.greet(userName, greetType));
+            }
+
+
+            else if ("greet".equals(command) && commandUser.length > 1) {
                 String userName = commandUser[1];
-                String lang = commandUser[2];
+                String lang =  commandUser[2];
                 System.out.println(greetUser.greet(userName, lang));
                 System.out.println("Counter: " + " " + greetUser.getMapSize());
             }
@@ -69,7 +80,7 @@ public class Commands extends Greeted {
                 + "[ clear ] followed by a username delete the greet counter for the specified user and decrement the greet counter by 1, \n"
                 + "[ exit ] exits the application,\n");
     }
-
+    
     //define a method to exit the program
     public void exit(){
         System.exit(0);
