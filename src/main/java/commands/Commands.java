@@ -35,8 +35,6 @@ public class Commands extends Greeted {
                 System.out.println("Counter: " + " " + greetUser.getMapSize());
             }
 
-            else if ("help".equals(command) && commandUser.length > 1) greetUser.help();
-
             else if ("greeted".equals(command)) {
                 if (commandUser.length > 1){
                     String userName = commandUser[1].toLowerCase();
@@ -56,10 +54,26 @@ public class Commands extends Greeted {
                     greetUser.clearAllUsersInTheMap();
                     System.out.println("All Users Have Been Cleared..!");
                 }
-            }
+            }else if ("help".equals(command)) help();
+            else if ("exit".equals(command)) exit();
         }
     }
+    //Define a method for help
+    public void help(){
+        System.out.println("*****************Valid Commands*****************");
+        System.out.println("[ greet ] followed by the name and the language the user is to be greeted in, \n"
+                + "[ greeted ] should display a list of all users that has been greeted and how many time each user has been greeted, \n"
+                + "[ greeted ] followed by a username returns how many times that username have been greeted,\n"
+                + "[ counter ] returns a count of how many unique users has been greeted, \n"
+                + "[ clear ] deletes of all users greeted and the reset the greet counter to 0,\n"
+                + "[ clear ] followed by a username delete the greet counter for the specified user and decrement the greet counter by 1, \n"
+                + "[ exit ] exits the application,\n");
+    }
 
+    //define a method to exit the program
+    public void exit(){
+        System.exit(0);
+    }
     //Define a method to for headers
     private void printMainHeader() {
         System.out.println("----------------------------------------------------------------------------------------");
