@@ -31,7 +31,6 @@ public class GreetUser {
     }
 
     public Map<String, Integer> deleteSpecificUsersInsideTheMap(String userName) {
-
         return greeted.removeSpecificUsersInsideTheMap(userName);
     }
 
