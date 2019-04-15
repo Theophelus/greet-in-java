@@ -11,7 +11,6 @@ public class Greeted {
 
     //Define a setter method that will be able to push users in the HashMap Map with specific.
     public boolean setGreetedUsers(String userName) {
-
         if (this.userName != "") this.userName = userName;
         /*
         Check if Map containKey, if true get the key n initialise it to zero

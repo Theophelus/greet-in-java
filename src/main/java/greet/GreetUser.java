@@ -1,8 +1,10 @@
 package greet;
 
+import counter.GreetCounter;
+
 import java.util.Map;
 
-public class GreetUser {
+public class GreetUser implements GreetCounter {
 
     Greet greets = new Greet();
     Greeted greeted = new Greeted();
@@ -33,5 +35,4 @@ public class GreetUser {
     public Map<String, Integer> deleteSpecificUsersInsideTheMap(String userName) {
         return greeted.removeSpecificUsersInsideTheMap(userName);
     }
-
 }
