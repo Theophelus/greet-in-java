@@ -10,19 +10,23 @@ public class Counterjdbc implements GreetCounter {
     //define Hash Map to get name and counter in the table
     Map<String, Integer> storeData = new HashMap<>();
     Greet newGreet = new Greet();
-    //Define a map
-
+    //SQL
     final String  INSERT_USER_SQL = "INSERT INTO user(user_name, user_count) VALUES (?, ?)";
     final String  CHECK_USER_SQL = "SELECT * FROM user WHERE user_name = ?";
     final String  GET_ALL_USERS = "SELECT * FROM user";
     final String  GET_SINGLE_USER = "SELECT user_count FROM user WHERE user_name = ?";
     final String UPDATE_USER_SQL = "UPDATE user SET user_count = ? WHERE user_name = ?";
+    final String DELETE_SPECIFIC_USER = "DELETE FROM user WHERE user_name = ?";
+
+    //Database connection
     Connection con;
+    //Prepared statement
     PreparedStatement pInsertData;
     PreparedStatement pCheckUser;
     PreparedStatement pUpdateUser;
     PreparedStatement pGetAllUsers;
     PreparedStatement pGetSingleUser;
+    PreparedStatement pDeleteUser;
     //Define a method to for connecton Stringar
     public Counterjdbc() {
         try{
@@ -41,11 +45,11 @@ public class Counterjdbc implements GreetCounter {
             pUpdateUser = con.prepareStatement(UPDATE_USER_SQL);
             pGetAllUsers = con.prepareStatement(GET_ALL_USERS);
             pGetSingleUser = con.prepareStatement(GET_SINGLE_USER);
+            pDeleteUser = con.prepareStatement(DELETE_SPECIFIC_USER);
         }catch (Exception ex){
             ex.printStackTrace();
         }
     }
-
     @Override
     public String greet(String user_name, String lang) {
         try {
@@ -91,5 +95,11 @@ public class Counterjdbc implements GreetCounter {
             if (rs.next()) return rs.getInt("user_count");
         }catch (SQLException e) {System.out.println("Error: " + e);}
         return 0;
+    }
+
+    @Override
+    public Map<String, Integer> deleteSpecificUsersInsideTheMap(String userName) {
+
+        return storeData;
     }
 }
