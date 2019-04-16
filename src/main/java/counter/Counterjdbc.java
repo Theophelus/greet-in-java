@@ -78,7 +78,6 @@ public class Counterjdbc implements GreetCounter {
         } catch (SQLException e) {
             System.out.println("Error: " + e);
         }
-        System.out.println(storeData);
         return storeData;
     }
 }

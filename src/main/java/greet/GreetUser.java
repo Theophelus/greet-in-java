@@ -23,7 +23,6 @@ public class GreetUser implements GreetCounter {
         return greeted.getGreetedSingleUser(userName);
     }
 
-
     public short getMapSize() {
         return (short) greeted.getGreetedUsersSize();
     }
