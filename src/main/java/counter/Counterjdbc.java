@@ -7,17 +7,22 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Counterjdbc implements GreetCounter {
-    //Define an instance of greet class
+    //define Hash Map to get name and counter in the table
+    Map<String, Integer> storeData = new HashMap<>();
     Greet newGreet = new Greet();
+    //Define a map
+
     final String  INSERT_USER_SQL = "INSERT INTO user(user_name, user_count) VALUES (?, ?)";
     final String  CHECK_USER_SQL = "SELECT * FROM user WHERE user_name = ?";
     final String  GET_ALL_USERS = "SELECT * FROM user";
+    final String  GET_SINGLE_USER = "SELECT user_count FROM user WHERE user_name = ?";
     final String UPDATE_USER_SQL = "UPDATE user SET user_count = ? WHERE user_name = ?";
     Connection con;
     PreparedStatement pInsertData;
     PreparedStatement pCheckUser;
     PreparedStatement pUpdateUser;
     PreparedStatement pGetAllUsers;
+    PreparedStatement pGetSingleUser;
     //Define a method to for connecton Stringar
     public Counterjdbc() {
         try{
@@ -35,7 +40,7 @@ public class Counterjdbc implements GreetCounter {
             pCheckUser = con.prepareStatement(CHECK_USER_SQL);
             pUpdateUser = con.prepareStatement(UPDATE_USER_SQL);
             pGetAllUsers = con.prepareStatement(GET_ALL_USERS);
-
+            pGetSingleUser = con.prepareStatement(GET_SINGLE_USER);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -47,7 +52,6 @@ public class Counterjdbc implements GreetCounter {
             //prepared statement
             pCheckUser.setString(1,user_name);
             ResultSet rs = pCheckUser.executeQuery();
-            System.out.println(rs);
             //Check if user doesn't exists
             if (!rs.next()){
                 pInsertData.setString(1, user_name);
@@ -64,11 +68,8 @@ public class Counterjdbc implements GreetCounter {
         }
         return newGreet.greetUser(lang, user_name);
     }
-
     @Override
     public Map<String, Integer> getGreeted() {
-        //define Hash Map to get name and counter in the table
-        Map<String, Integer> storeData = new HashMap<>();
         try {
             //Get results
             ResultSet rs = pGetAllUsers.executeQuery();
@@ -79,5 +80,16 @@ public class Counterjdbc implements GreetCounter {
             System.out.println("Error: " + e);
         }
         return storeData;
+    }
+
+    @Override
+    public Integer getSingleUser(String user_name) {
+        try {
+            pGetSingleUser.setString(1,user_name);
+            ResultSet rs = pGetSingleUser.executeQuery();
+            //If the user exists get its counter
+            if (rs.next()) return rs.getInt("user_count");
+        }catch (SQLException e) {System.out.println("Error: " + e);}
+        return 0;
     }
 }

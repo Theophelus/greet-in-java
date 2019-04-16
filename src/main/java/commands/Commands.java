@@ -31,8 +31,8 @@ public class Commands extends Greeted {
             String command = commandUser[0].trim();
 
 
-            if ("greet".equalsIgnoreCase(command) && commandUser.length == 2){
-                String userName = commandUser[1].toUpperCase();
+            if ("greet".equals(command) && commandUser.length == 2){
+                String userName = commandUser[1];
                 String greetType = "Isixhosa";
                 Languages.valueOf(greetType);
                 System.out.println(greetUser.greet(userName, greetType));
@@ -47,12 +47,12 @@ public class Commands extends Greeted {
             }
 
             else if ("greeted".equals(command)) {
-//                if (commandUser.length > 1){
-//                    String userName = commandUser[1].toLowerCase();
-//                    System.out.println(greetUser.getSingleUser(userName));
-//                }else {
+                if (commandUser.length > 1){
+                    String userName = commandUser[1];
+                    System.out.println( userName + " " + "you have been greeted: " + greetUser.getSingleUser(userName) + " " + "times");
+                }else {
                     System.out.println("All Greeted Users: \n" + " " + greetUser.getGreeted());
-//            }
+            }
             }
 //
 //            else if ("clear".equals(command)) {
