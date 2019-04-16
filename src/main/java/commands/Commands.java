@@ -34,7 +34,6 @@ public class Commands extends Greeted {
             if ("greet".equalsIgnoreCase(command) && commandUser.length == 2){
                 String userName = commandUser[1].toUpperCase();
                 String greetType = "Isixhosa";
-                greetUser.greet(userName, greetType);
                 Languages.valueOf(greetType);
                 System.out.println(greetUser.greet(userName, greetType));
             }
@@ -46,15 +45,15 @@ public class Commands extends Greeted {
                 System.out.println(greetUser.greet(userName, lang));
 //                System.out.println("Counter: " + " " + greetUser.getMapSize());
             }
-//
-//            else if ("greeted".equals(command)) {
+
+            else if ("greeted".equals(command)) {
 //                if (commandUser.length > 1){
 //                    String userName = commandUser[1].toLowerCase();
 //                    System.out.println(greetUser.getSingleUser(userName));
 //                }else {
-//                    System.out.println("All Greeted Users: \n" + " " + greetUser.getGreeted());
+                    System.out.println("All Greeted Users: \n" + " " + greetUser.getGreeted());
 //            }
-//            }
+            }
 //
 //            else if ("clear".equals(command)) {
 //                if (commandUser.length > 1){
