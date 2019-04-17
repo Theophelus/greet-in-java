@@ -14,9 +14,22 @@ public class Commands extends Greeted {
     Scanner input = new Scanner(System.in);
 
     public void runCommands(){
-//        printMainHeader();
+        printMainHeader();
         greets();
     }
+    //Define a method to for headers
+    private void printMainHeader() {
+        System.out.println("----------------------------------------------------------------------------------------");
+        System.out.println("                             ***  WELCOME TO MY  ***                                    ");
+        System.out.println("               ************ GREETINGS CONSOLE APPLICATION  ************                 ");
+        System.out.println("----------------------------------------------------------------------------------------");
+        System.out.println("..");
+        System.out.println("Greetings is an Console Application that allow user to be greeted in different Languages");
+        System.out.println("----------------------------------------------------------------------------------------");
+        System.out.println("..");
+    }
+
+
     private void greets() {
         //Define a variable to control the loop
         Boolean selection = true;
@@ -70,6 +83,7 @@ public class Commands extends Greeted {
             else if ("exit".equals(command)) exit();
         }
     }
+
     //Define a method for help
     public void help(){
         System.out.println("*****************Valid Commands*****************");
@@ -86,18 +100,6 @@ public class Commands extends Greeted {
     public void exit(){
         System.exit(0);
     }
-    //Define a method to for headers
-    private void printMainHeader() {
-        System.out.println("----------------------------------------------------------------------------------------");
-        System.out.println("                             ***  WELCOME TO MY  ***                                    ");
-        System.out.println("               ************ GREETINGS CONSOLE APPLICATION  ************                 ");
-        System.out.println("----------------------------------------------------------------------------------------");
-        System.out.println("..");
-        System.out.println("Greetings is an Console Application that allow user to be greeted in different Languages");
-        System.out.println("----------------------------------------------------------------------------------------");
-        System.out.println("..");
-    }
-
 }
 
 

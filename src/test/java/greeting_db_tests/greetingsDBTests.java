@@ -1,5 +1,6 @@
 package greeting_db_tests;
 
+import counter.Counterjdbc;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -7,31 +8,30 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 public class greetingsDBTests {
 
-    final String DATABASE_URL = "jdbc:h2:./target/user_db";
+    final String DATABASE_URL = "jdbc:h2:./target/user";
 
     public Connection getConnection() throws Exception {
         return DriverManager.getConnection(DATABASE_URL,"sa","");
     }
     @BeforeEach
-    public void cleanUpTables() {
+    public void cleanUpDatabaseTables() {
         // don't touch any code in here!!!
         try {
             try(Connection conn = getConnection()) {
                 // I repeat don't touch any code in here!!!
                 Statement statement = conn.createStatement();
-//                statement.addBatch("delete from users where user_name in ('', 'Orange')");
-//                statement.addBatch("update users set  =   where name = 'red apple'");
+                statement.addBatch("DELETE FROM user");
+                statement.addBatch( "INSERT INTO user(user_name, user_count) VALUES (anele, 1)");
                 statement.executeBatch();
-
                 // I repeat once again don't touch any code in here!!!
-
             }
         } catch(Exception ex) {
-            System.out.println("These test will fail until the fruit table is created: " + ex);
+            System.out.println("These test will fail until the user table is created: " + ex);
         }
     }
 
@@ -54,9 +54,24 @@ public class greetingsDBTests {
             Class.forName("org.h2.Driver");
             //Open connections To user_db
             Connection conn = DriverManager
-                    .getConnection("jdbc:h2:./target/users_db", "sa", "");
+                    .getConnection(DATABASE_URL, "sa", "");
         } catch (Exception e) {
             fail(e);
         }
+    }
+    @Test
+    public void shouldBeAbleToGreetUser(){
+        Counterjdbc counterjdbc = new Counterjdbc();
+        assertEquals("Molo, Anele", counterjdbc.greet("Anele", "Isixhosa") );
+    }
+
+    @Test
+    public void shouldBeAbleToAddUserInTheDatabase(){
+        Counterjdbc counterjdbc = new Counterjdbc();
+        counterjdbc.greet("Anele", "English");
+        counterjdbc.greet("Anele", "Isixhosa");
+        counterjdbc.greet("Nannie", "IsiZulu");
+
+        assertEquals(2,counterjdbc.getGreeted().size());
     }
 }
