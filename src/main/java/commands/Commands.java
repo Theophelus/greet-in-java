@@ -49,7 +49,7 @@ public class Commands extends Greeted {
             else if ("greeted".equals(command)) {
                 if (commandUser.length > 1){
                     String userName = commandUser[1];
-                    System.out.println( userName + " " + "you have been greeted: " + greetUser.getSingleUser(userName) + " " + "times");
+                    System.out.println( userName + " " + "you have been greeted: " + greetUser.getSingleUser(userName) + " " + "time(s)");
                 }else {
                     System.out.println("All Greeted Users: \n" + " " + greetUser.getGreeted());
             }
@@ -64,7 +64,7 @@ public class Commands extends Greeted {
            }
            else {
                     greetUser.clearAllUsersInTheMap();
-                    System.out.println("All Users Have Been Successfully..!");
+                    System.out.println("All Users Have Been Deleted Successfully..!");
                 }
             }else if ("help".equals(command)) help();
             else if ("exit".equals(command)) exit();

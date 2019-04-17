@@ -126,7 +126,7 @@ public class Counterjdbc implements GreetCounter {
     public void clearAllUsersInTheMap() {
         try {
             pDeleteAll.executeUpdate();
-            System.out.println("All users deleted");
+            storeData.clear();
         } catch (SQLException e) {
             e.printStackTrace();
         }
