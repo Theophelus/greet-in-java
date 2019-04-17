@@ -4,6 +4,7 @@ import greet.Greet;
 
 import java.sql.*;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class Counterjdbc implements GreetCounter {
@@ -17,9 +18,11 @@ public class Counterjdbc implements GreetCounter {
     final String  GET_SINGLE_USER = "SELECT user_count FROM user WHERE user_name = ?";
     final String UPDATE_USER_SQL = "UPDATE user SET user_count = ? WHERE user_name = ?";
     final String DELETE_SPECIFIC_USER = "DELETE FROM user WHERE user_name = ?";
+    final String DELETE_ALL_USERS = "DELETE FROM user";
 
     //Database connection
     Connection con;
+
     //Prepared statement
     PreparedStatement pInsertData;
     PreparedStatement pCheckUser;
@@ -27,6 +30,7 @@ public class Counterjdbc implements GreetCounter {
     PreparedStatement pGetAllUsers;
     PreparedStatement pGetSingleUser;
     PreparedStatement pDeleteUser;
+    PreparedStatement pDeleteAll;
     //Define a method to for connecton Stringar
     public Counterjdbc() {
         try{
@@ -46,10 +50,12 @@ public class Counterjdbc implements GreetCounter {
             pGetAllUsers = con.prepareStatement(GET_ALL_USERS);
             pGetSingleUser = con.prepareStatement(GET_SINGLE_USER);
             pDeleteUser = con.prepareStatement(DELETE_SPECIFIC_USER);
+            pDeleteAll = con.prepareStatement(DELETE_ALL_USERS);
         }catch (Exception ex){
             ex.printStackTrace();
         }
     }
+
     @Override
     public String greet(String user_name, String lang) {
         try {
@@ -78,8 +84,9 @@ public class Counterjdbc implements GreetCounter {
             //Get results
             ResultSet rs = pGetAllUsers.executeQuery();
             //Check every element in the Table if found push in the map..!
-            while (rs.next()) {storeData.put(rs.getString("user_name"), rs.getInt("user_count"));}
-            System.out.println(rs.getString("user_name") + " " + rs.getInt("user_count"));
+            while (rs.next()) storeData.put(rs.getString("user_name"), rs.getInt("user_count"));
+//            else
+            System.out.println();
         } catch (SQLException e) {
             System.out.println("Error: " + e);
         }
@@ -99,7 +106,31 @@ public class Counterjdbc implements GreetCounter {
 
     @Override
     public Map<String, Integer> deleteSpecificUsersInsideTheMap(String userName) {
-
+        try {
+//            pDeleteUser.execute();
+            pCheckUser.setString(1,userName);
+            pDeleteUser.setString(1,userName);
+            Iterator<String> user = storeData.keySet().iterator();
+            ResultSet rs = pCheckUser.executeQuery();
+            if (rs.next())
+            while (user.hasNext())  if (user.next().contains(userName)) user.remove();
+            pDeleteUser.executeUpdate();
+//            con.close();
+        }catch (SQLException e){
+            System.out.println("Error: " + e);
+        }
         return storeData;
     }
+
+    @Override
+    public void clearAllUsersInTheMap() {
+        try {
+            pDeleteAll.executeUpdate();
+            System.out.println("All users deleted");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

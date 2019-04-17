@@ -8,4 +8,5 @@ public interface GreetCounter {
     //Define a method to get single user in the map
     Integer getSingleUser(String userName);
     Map<String, Integer> deleteSpecificUsersInsideTheMap(String userName);
+    void clearAllUsersInTheMap();
 }
