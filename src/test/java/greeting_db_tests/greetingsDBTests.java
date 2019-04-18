@@ -9,7 +9,6 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
 
 public class greetingsDBTests {
 
@@ -26,7 +25,6 @@ public class greetingsDBTests {
                 // I repeat don't touch any code in here!!!
                 Statement statement = conn.createStatement();
                 statement.addBatch("DELETE FROM user");
-                statement.addBatch( "INSERT INTO user(user_name, user_count) VALUES (anele, 1)");
                 statement.executeBatch();
                 // I repeat once again don't touch any code in here!!!
             }
@@ -36,42 +34,84 @@ public class greetingsDBTests {
     }
 
     @Test
-    public void loadJdbcDriver() {
-
-        try {
-
-            Class.forName("org.h2.Driver");
-        } catch (ClassNotFoundException e) {
-            fail(e);
-        }
-    }
-
-    @Test
-    public void connectToDatabase() {
-
-        try {
-            //Register Drivers
-            Class.forName("org.h2.Driver");
-            //Open connections To user_db
-            Connection conn = DriverManager
-                    .getConnection(DATABASE_URL, "sa", "");
-        } catch (Exception e) {
-            fail(e);
-        }
-    }
-    @Test
     public void shouldBeAbleToGreetUser(){
-        Counterjdbc counterjdbc = new Counterjdbc();
-        assertEquals("Molo, Anele", counterjdbc.greet("Anele", "Isixhosa") );
+
+        try {
+            Counterjdbc counterjdbc = new Counterjdbc();
+            assertEquals("Molo, anele", counterjdbc.greet("Anele", "Isixhosa") );
+        }catch (Exception e){
+            System.out.println("Error: " + e);
+        }
+
     }
 
     @Test
     public void shouldBeAbleToAddUserInTheDatabase(){
-        Counterjdbc counterjdbc = new Counterjdbc();
-        counterjdbc.greet("Anele", "English");
-        counterjdbc.greet("Anele", "Isixhosa");
-        counterjdbc.greet("Nannie", "IsiZulu");
 
-        assertEquals(2,counterjdbc.getGreeted().size());
+        try {
+            Counterjdbc counterjdbc = new Counterjdbc();
+            counterjdbc.greet("Anele", "English");
+            counterjdbc.greet("Anele", "Isixhosa");
+            counterjdbc.greet("Nannie", "IsiZulu");
+//            System.out.println(counterjdbc.getMapSize());
+
+            assertEquals("{nannie=1, anele=2}",counterjdbc.getGreeted());
+
+        }catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+    }
+    @Test
+    public void shouldBeAbleToReturnSizeTable(){
+        try {
+            Counterjdbc counterjdbc = new Counterjdbc();
+            counterjdbc.greet("Anele", "English");
+            counterjdbc.greet("Anele", "Isixhosa");
+            counterjdbc.greet("Nannie", "IsiZulu");
+//            System.out.println(counterjdbc.getMapSize());
+
+            assertEquals(2, counterjdbc.getMapSize());
+        }catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+    }
+    @Test
+    public void shouldBeToClearDatabase() {
+
+        try {
+            Counterjdbc counterjdbc = new Counterjdbc();
+            //Push names into the hashMap
+            counterjdbc.greet("Anele", "English");
+            counterjdbc .greet("Anele", "IsiZulu");
+            counterjdbc.greet("Anele","Isixhosa");
+            counterjdbc.greet("Mbali","English");
+            counterjdbc .clearAllUsersInTheMap();
+            assertEquals(counterjdbc.getMapSize(), 0);
+//        System.out.println("HashMap successfully clear" + " " + greetUser.getGreeted());
+        }catch (Exception e){
+            System.out.println("Error: " + e);
+        }
+    }
+
+    @Test
+    public void shouldBeAbleToDeleteSpecificUser(){
+
+        try {
+            Counterjdbc counterjdbc = new Counterjdbc();
+            //Push names into the hashMap
+            counterjdbc.greet("Anele", "English");
+            counterjdbc.greet("Anele", "IsiZulu");
+            counterjdbc.greet("Anele","Isixhosa");
+            counterjdbc.greet("Yolanda","English");
+            counterjdbc .greet("Mbali","English");
+//        System.out.println(greetUser.getGreeted());
+//        System.out.println("This user have been removed from the map" + " " + greetUser.deleteSpecificUsersInsideTheMap("Yolanda"));
+            assertEquals( counterjdbc.getGreeted(), counterjdbc .deleteSpecificUsersInsideTheMap("Yolanda"));
+//        System.out.println("Check how many users in the map" + " " + greetUser.getMapSize());
+
+        }catch (Exception e){
+            System.out.println("Error: " + e);
+        }
+
     }
 }

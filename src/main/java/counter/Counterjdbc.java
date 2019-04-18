@@ -19,6 +19,7 @@ public class Counterjdbc implements GreetCounter {
     final String UPDATE_USER_SQL = "UPDATE user SET user_count = ? WHERE user_name = ?";
     final String DELETE_SPECIFIC_USER = "DELETE FROM user WHERE user_name = ?";
     final String DELETE_ALL_USERS = "DELETE FROM user";
+    final String GET_ALL = "SELECT COUNT(*) AS user_count FROM user";
 
     //Database connection
     Connection con;
@@ -31,6 +32,7 @@ public class Counterjdbc implements GreetCounter {
     PreparedStatement pGetSingleUser;
     PreparedStatement pDeleteUser;
     PreparedStatement pDeleteAll;
+    PreparedStatement pGetAll;
     //Define a method to for connecton Stringar
     public Counterjdbc() {
         try{
@@ -51,6 +53,7 @@ public class Counterjdbc implements GreetCounter {
             pGetSingleUser = con.prepareStatement(GET_SINGLE_USER);
             pDeleteUser = con.prepareStatement(DELETE_SPECIFIC_USER);
             pDeleteAll = con.prepareStatement(DELETE_ALL_USERS);
+            pGetAll = con.prepareStatement(GET_ALL);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -58,9 +61,10 @@ public class Counterjdbc implements GreetCounter {
 
     @Override
     public String greet(String user_name, String lang) {
+        user_name = user_name.toLowerCase();
         try {
             //prepared statement
-            pCheckUser.setString(1,user_name);
+            pCheckUser.setString(1, user_name);
             ResultSet rs = pCheckUser.executeQuery();
             //Check if user doesn't exists
             if (!rs.next()){
@@ -101,6 +105,18 @@ public class Counterjdbc implements GreetCounter {
             //If the user exists get its counter
             if (rs.next()) return rs.getInt("user_count");
         }catch (SQLException e) {System.out.println("Error: " + e);}
+        return 0;
+    }
+
+    @Override
+    public short getMapSize(){
+        try {
+            ResultSet rs = pGetAll.executeQuery();
+                if (rs.next())
+                return (short) rs.getInt("user_count");
+        }catch (SQLException ex){
+            System.out.println("Error: " + ex);
+        }
         return 0;
     }
 

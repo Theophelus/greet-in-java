@@ -1,19 +1,19 @@
 package commands;
 
 import counter.Counterjdbc;
-import greet.Greeted;
 import greet.Languages;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
-public class Commands extends Greeted {
+public class Commands {
 
 //    GreetUser greetUser = new GreetUser();
     Counterjdbc greetUser = new Counterjdbc();
     //Define Scanner to read user inputs
     Scanner input = new Scanner(System.in);
 
-    public void runCommands(){
+    public void runCommands() throws SQLException {
         printMainHeader();
         greets();
     }
@@ -44,31 +44,31 @@ public class Commands extends Greeted {
             String command = commandUser[0].trim();
 
 
-            if ("greet".equals(command) && commandUser.length == 2){
+            if ("greet".equalsIgnoreCase(command) && commandUser.length == 2){
                 String userName = commandUser[1];
                 String greetType = "Isixhosa";
                 Languages.valueOf(greetType);
                 System.out.println(greetUser.greet(userName, greetType));
+                System.out.println("Counter: " + greetUser.getMapSize());
             }
 
-
-            else if ("greet".equals(command) && commandUser.length > 1) {
+            else if ("greet".equalsIgnoreCase(command) && commandUser.length > 1) {
                 String userName = commandUser[1];
                 String lang =  commandUser[2];
                 System.out.println(greetUser.greet(userName, lang));
-//                System.out.println("Counter: " + " " + greetUser.getMapSize());
+                System.out.println("Counter: " + greetUser.getMapSize());
             }
 
-            else if ("greeted".equals(command)) {
+            else if ("greeted".equalsIgnoreCase(command)) {
                 if (commandUser.length > 1){
                     String userName = commandUser[1];
                     System.out.println( userName + " " + "you have been greeted: " + greetUser.getSingleUser(userName) + " " + "time(s)");
                 }else {
-                    System.out.println("All Greeted Users: \n" + " " + greetUser.getGreeted());
+                    System.out.println("Greeted users: \n" + " " + greetUser.getGreeted());
             }
             }
 
-            else if ("clear".equals(command)) {
+            else if ("clear".equalsIgnoreCase(command)) {
                 if (commandUser.length > 1){
                String userName = commandUser[1];
                greetUser.deleteSpecificUsersInsideTheMap(userName);
@@ -79,8 +79,9 @@ public class Commands extends Greeted {
                     greetUser.clearAllUsersInTheMap();
                     System.out.println("All Users Have Been Deleted Successfully..!");
                 }
-            }else if ("help".equals(command)) help();
-            else if ("exit".equals(command)) exit();
+            }else if ("help".equalsIgnoreCase(command)) help();
+            else if ("exit".equalsIgnoreCase(command)) exit();
+            else if ("counter".equalsIgnoreCase(command)) System.out.println("Counter: " + greetUser.getMapSize());
         }
     }
 
