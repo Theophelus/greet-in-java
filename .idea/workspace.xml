@@ -52,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+            <state relative-caret-position="66">
+              <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -396,21 +396,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="greetingsDBTests_shouldBeToClearDatabase - 2019.04.18 at 11h 49m 38s.xml">
-      <configuration name="greetingsDBTests.shouldBeToClearDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetingsDBTests_shouldBeToClearDatabase - 2019.04.18 at 11h 52m 06s.xml">
-      <configuration name="greetingsDBTests.shouldBeToClearDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetingsDBTests_shouldBeAbleToDeleteSpecificUser - 2019.04.18 at 11h 53m 25s.xml">
-      <configuration name="greetingsDBTests.shouldBeAbleToDeleteSpecificUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 35m 02s.xml">
-      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 36m 40s.xml">
-      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="greetingsDBTests_shouldBeAbleToReturnSizeTable - 2019.04.23 at 09h 37m 41s.xml">
       <configuration name="greetingsDBTests.shouldBeAbleToReturnSizeTable" configurationId="JUnit" />
     </history-entry>
@@ -426,6 +411,21 @@
     <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 41m 57s.xml">
       <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 42m 45s.xml">
+      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 43m 12s.xml">
+      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 44m 13s.xml">
+      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 45m 54s.xml">
+      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 46m 39s.xml">
+      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,7 +438,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28924304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -453,12 +452,12 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884902" />
-      <window_info anchor="bottom" content_ui="combo" id="Run" order="2" sideWeight="0.4996016" weight="0.42128935" />
+      <window_info anchor="bottom" content_ui="combo" id="Run" order="2" sideWeight="0.4996016" weight="0.61769116" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298351" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49880478" visible="true" weight="0.16791604" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49880478" visible="true" weight="0.6491754" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5011952" side_tool="true" weight="0.7466267" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.56971514" />
@@ -691,8 +690,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+        <state relative-caret-position="66">
+          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
