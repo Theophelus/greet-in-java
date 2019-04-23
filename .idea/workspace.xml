@@ -4,11 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27fb81b3-d629-4eed-ab0c-47af49aceca6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="27fb81b3-d629-4eed-ab0c-47af49aceca6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
