@@ -4,7 +4,12 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27fb81b3-d629-4eed-ab0c-47af49aceca6" name="Default Changelist" comment="" />
+    <list default="true" id="27fb81b3-d629-4eed-ab0c-47af49aceca6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/greeting_db_tests/greetingsDBTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/greeting_db_tests/greetingsDBTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/user.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/user.mv.db" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +29,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/counter/GreetCounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="294">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -33,23 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/counter/Counterjdbc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+            <state relative-caret-position="-1367">
+              <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,10 +51,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="264">
+              <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -392,21 +388,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="greetingsDBTests_shouldBeAbleToReturnSizeTable - 2019.04.23 at 09h 37m 41s.xml">
-      <configuration name="greetingsDBTests.shouldBeAbleToReturnSizeTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 38m 01s.xml">
-      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 38m 41s.xml">
-      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 41m 00s.xml">
-      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 41m 57s.xml">
-      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 42m 45s.xml">
       <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
     </history-entry>
@@ -422,6 +403,21 @@
     <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 46m 39s.xml">
       <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 09h 55m 58s.xml">
+      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 10h 00m 49s.xml">
+      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 10h 01m 54s.xml">
+      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 10h 02m 22s.xml">
+      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetingsDBTests_shouldBeAbleToAddUserInTheDatabase - 2019.04.23 at 10h 02m 46s.xml">
+      <configuration name="greetingsDBTests.shouldBeAbleToAddUserInTheDatabase" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -434,8 +430,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28924304" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28924304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -448,12 +445,12 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884902" />
-      <window_info anchor="bottom" content_ui="combo" id="Run" order="2" sideWeight="0.4996016" weight="0.61769116" />
+      <window_info anchor="bottom" content_ui="combo" id="Run" order="2" sideWeight="0.4996016" visible="true" weight="0.35232383" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298351" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49880478" visible="true" weight="0.6491754" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49880478" weight="0.33733132" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5011952" side_tool="true" weight="0.7466267" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.56971514" />
@@ -625,30 +622,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/counter/GreetCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/MainGreet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,20 +651,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/counter/Counterjdbc.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        <state relative-caret-position="264">
+          <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/MainGreet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+        <state relative-caret-position="252">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/GreetCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/Counterjdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1367">
+          <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
