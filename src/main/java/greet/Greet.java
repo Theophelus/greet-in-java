@@ -7,19 +7,29 @@ public class  Greet {
 //    Greeted greeted = new Greeted();
 
     public String greetUser(String language, String userName) {
-        //greeted.setGreetedUsers(userName);
+
         if (userName != "") this.username = userName;
 
-        switch (Languages.valueOf(language)) {
-            case Isixhosa:
-                return  Languages.valueOf(language).getLang() + ", " + username;
-            case English:
-                return  Languages.valueOf(language).getLang() + ", " + username;
-            case IsiZulu:
-                return  Languages.valueOf(language).getLang() + ", " + username;
-            default:
-                return Languages.Isixhosa.getLang() + " " + username;
+        try {
+
+            switch (Languages.valueOf(language)) {
+                case isixhosa:
+                    return  Languages.valueOf(language).getLang() + ", " + username;
+                case english:
+                    return  Languages.valueOf(language).getLang() + ", " + username;
+                case isizulu:
+                    return  Languages.valueOf(language).getLang() + ", " + username;
+                default:
+                    return Languages.isixhosa.getLang() + " " + username;
+            }
+
+        }catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e);
+
         }
+
+
+        return language;
     }
 
 

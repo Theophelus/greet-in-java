@@ -12,16 +12,16 @@ public class GreetTests {
     @Test
     public void shouldBeAbleToGreetUserInIsiXhosa(){
 
-        assertEquals("Molo, Anele", greet.greetUser("Isixhosa", "Anele"));
+        assertEquals("Molo, Anele", greet.greetUser("isixhosa", "Anele"));
     }
     @Test
     public void shouldBeAbleToGreetUserInEnglish(){
 
-        assertEquals("Hello, Mbali", greet.greetUser("English", "Mbali"));
+        assertEquals("Hello, Mbali", greet.greetUser("english", "Mbali"));
     }
     @Test
     public void shouldBeAbleToGreetUserInIsZulu(){
 
-        assertEquals("Sawubona, Yolanda", greet.greetUser("IsiZulu", "Yolanda"));
+        assertEquals("Sawubona, Yolanda", greet.greetUser("isizulu", "Yolanda"));
     }
 }

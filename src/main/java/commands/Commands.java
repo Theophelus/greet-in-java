@@ -36,26 +36,28 @@ public class Commands {
 
         while (selection) {
 
-            System.out.print("Type a command: ");
+            System.out.print("Please enter a Command: ");
             String enterCommand = input.nextLine();
 
 
             String[] commandUser = enterCommand.trim().split(" ");
             String command = commandUser[0].trim();
 
-
             if ("greet".equalsIgnoreCase(command) && commandUser.length == 2){
                 String userName = commandUser[1];
-                String greetType = "Isixhosa";
+                String greetType = "Isixhosa".toLowerCase();
                 Languages.valueOf(greetType);
+                System.out.println("----------------------------------");
                 System.out.println(greetUser.greet(userName, greetType));
                 System.out.println("Counter: " + greetUser.getMapSize());
             }
 
             else if ("greet".equalsIgnoreCase(command) && commandUser.length > 1) {
                 String userName = commandUser[1];
-                String lang =  commandUser[2];
+                String lang =  commandUser[2].toLowerCase();
+                System.out.println("----------------------------------");
                 System.out.println(greetUser.greet(userName, lang));
+                System.out.println("----------------------------------");
                 System.out.println("Counter: " + greetUser.getMapSize());
             }
 
@@ -82,6 +84,15 @@ public class Commands {
             }else if ("help".equalsIgnoreCase(command)) help();
             else if ("exit".equalsIgnoreCase(command)) exit();
             else if ("counter".equalsIgnoreCase(command)) System.out.println("Counter: " + greetUser.getMapSize());
+            else
+                try {
+                    System.out.println("-----------------------------------------------");
+                    System.out.println("invalid command type help for valid commands..!");
+                    System.out.println("-----------------------------------------------");
+
+                }catch (IllegalArgumentException e){
+                    System.out.println("Error: " + e);
+                }
         }
     }
 

@@ -10,16 +10,16 @@ public class GreetUserTest {
     @Test
     public void shouldBeAbleToGreetUser(){
         GreetUser greetUser = new GreetUser();
-        assertEquals("Hello, Yegan", greetUser.greet("Yegan","English"));
+        assertEquals("Hello, Yegan", greetUser.greet("Yegan","english"));
     }
 
     @Test
     public void shouldGetOneForUserCounter(){
         GreetUser greetUser = new GreetUser();
 
-        greetUser.greet("Yegan", "Isixhosa");
-        greetUser.greet("Ace", "English");
-        greetUser.greet("Ace", "IsiZulu");
+        greetUser.greet("Yegan", "isixhosa");
+        greetUser.greet("Ace", "english");
+        greetUser.greet("Ace", "isizulu");
 
 //        System.out.println(greetUser.getGreeted());
 
@@ -30,12 +30,12 @@ public class GreetUserTest {
     public void shouldBeAbleToReturnTheSizeOfeTheMap(){
 
         GreetUser greetUser = new GreetUser();
-        greetUser.greet("Yegan", "Isixhosa");
-        greetUser.greet("Ace", "English");
-        greetUser.greet("Anele", "IsiZulu");
-        greetUser.greet("Thabang", "Isixhosa");
-        greetUser.greet("Ace", "English");
-        greetUser.greet("Mbali", "IsiZulu");
+        greetUser.greet("Yegan", "isixhosa");
+        greetUser.greet("Ace", "english");
+        greetUser.greet("Anele", "isizulu");
+        greetUser.greet("Thabang", "isixhosa");
+        greetUser.greet("Ace", "english");
+        greetUser.greet("Mbali", "isizulu");
 
 //        System.out.println(greetUser.getMapSize());
 
@@ -45,10 +45,10 @@ public class GreetUserTest {
     public void shouldBeToClearHashMap() {
         GreetUser greetUser = new GreetUser();
         //Push names into the hashMap
-        greetUser.greet("Anele", "English");
-        greetUser.greet("Anele", "IsiZulu");
+        greetUser.greet("Anele", "english");
+        greetUser.greet("Anele", "isizulu");
         greetUser.greet("Anele","Isixhosa");
-        greetUser.greet("Mbali","English");
+        greetUser.greet("Mbali","english");
         greetUser.clearAllUsersInTheMap();
         assertEquals(greetUser.getGreeted().size(), 0);
 //        System.out.println("HashMap successfully clear" + " " + greetUser.getGreeted());
@@ -59,11 +59,11 @@ public class GreetUserTest {
 
         GreetUser greetUser = new GreetUser();
         //Push names into the hashMap
-        greetUser.greet("Anele", "English");
-        greetUser.greet("Anele", "IsiZulu");
-        greetUser.greet("Anele","Isixhosa");
-        greetUser.greet("Yolanda","English");
-        greetUser.greet("Mbali","English");
+        greetUser.greet("Anele", "english");
+        greetUser.greet("Anele", "isizulu");
+        greetUser.greet("Anele","isixhosa");
+        greetUser.greet("Yolanda","english");
+        greetUser.greet("Mbali","english");
 //        System.out.println(greetUser.getGreeted());
 //        System.out.println("This user have been removed from the map" + " " + greetUser.deleteSpecificUsersInsideTheMap("Yolanda"));
         assertEquals( greetUser.getGreeted(), greetUser.deleteSpecificUsersInsideTheMap("Yolanda"));

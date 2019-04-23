@@ -1,9 +1,9 @@
 package greet;
 
 public enum Languages {
-    Isixhosa("Molo"),
-    English("Hello"),
-    IsiZulu("Sawubona");
+    isixhosa("Molo"),
+    english("Hello"),
+    isizulu("Sawubona");
 
     //Define a lang variable to Store data
     private String lang;

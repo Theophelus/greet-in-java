@@ -33,7 +33,7 @@ public class Counterjdbc implements GreetCounter {
     PreparedStatement pDeleteUser;
     PreparedStatement pDeleteAll;
     PreparedStatement pGetAll;
-    //Define a method to for connecton Stringar
+    //Define a method to for connecton String
     public Counterjdbc() {
         try{
             ///Define three strings
@@ -45,7 +45,7 @@ public class Counterjdbc implements GreetCounter {
             //Define a method to create connection strings to the database
             con = DriverManager
                     .getConnection(URL,user,password);
-            //Define prepared statements
+            //Define prepared statements and pass sql as arguments
             pInsertData = con.prepareStatement(INSERT_USER_SQL);
             pCheckUser = con.prepareStatement(CHECK_USER_SQL);
             pUpdateUser = con.prepareStatement(UPDATE_USER_SQL);
@@ -89,8 +89,7 @@ public class Counterjdbc implements GreetCounter {
             ResultSet rs = pGetAllUsers.executeQuery();
             //Check every element in the Table if found push in the map..!
             while (rs.next()) storeData.put(rs.getString("user_name"), rs.getInt("user_count"));
-//            else
-            System.out.println();
+
         } catch (SQLException e) {
             System.out.println("Error: " + e);
         }
@@ -127,11 +126,10 @@ public class Counterjdbc implements GreetCounter {
             pCheckUser.setString(1,userName);
             pDeleteUser.setString(1,userName);
             Iterator<String> user = storeData.keySet().iterator();
-            ResultSet rs = pCheckUser.executeQuery();
-            if (rs.next())
+
             while (user.hasNext())  if (user.next().contains(userName)) user.remove();
             pDeleteUser.executeUpdate();
-//            con.close();
+
         }catch (SQLException e){
             System.out.println("Error: " + e);
         }

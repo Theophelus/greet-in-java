@@ -7,3 +7,4 @@ create table user(
 --insert into user(user_name, user_count) values ("Anele", 1);
 
 
+
