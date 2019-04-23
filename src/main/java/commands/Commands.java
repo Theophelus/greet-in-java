@@ -36,7 +36,7 @@ public class Commands {
 
         while (selection) {
 
-            System.out.print("Enter A Command: ");
+            System.out.print("Type a command: ");
             String enterCommand = input.nextLine();
 
 

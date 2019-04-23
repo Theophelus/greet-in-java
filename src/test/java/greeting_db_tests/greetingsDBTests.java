@@ -53,9 +53,8 @@ public class greetingsDBTests {
             counterjdbc.greet("Anele", "English");
             counterjdbc.greet("Anele", "Isixhosa");
             counterjdbc.greet("Nannie", "IsiZulu");
-//            System.out.println(counterjdbc.getMapSize());
 
-            assertEquals("{nannie=1, anele=2}",counterjdbc.getGreeted());
+            assertEquals("{nannie=1, anele=2}", counterjdbc.getGreeted().toString());
 
         }catch (Exception e) {
             System.out.println("Error: " + e);
