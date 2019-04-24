@@ -42,50 +42,48 @@ public class Commands {
             String[] commandUser = enterCommand.trim().split(" ");
             String command = commandUser[0].trim();
 
-            if ("greet".equalsIgnoreCase(command) && commandUser.length == 2){
-                String userName = commandUser[1];
-                String greetType = "Isixhosa".toLowerCase();
-                Languages.valueOf(greetType);
-                System.out.println(greetUser.greet(userName, greetType));
-            }
-
-            else if ("greet".equalsIgnoreCase(command) && commandUser.length > 1) {
-                String userName = commandUser[1];
-                String lang =  commandUser[2].toLowerCase();
-                System.out.println("----------------------------------");
-                System.out.println(" " + greetUser.greet(userName, lang));
-                System.out.println("----------------------------------");
-                System.out.println("Grand counter" + " | " + greetUser.getMapSize());
-            }
-
-            else if ("greeted".equalsIgnoreCase(command)) {
-                if (commandUser.length > 1){
+            try {
+                if ("greet".equalsIgnoreCase(command) && commandUser.length == 2) {
                     String userName = commandUser[1];
-                    System.out.println( userName + " " + "you have been greeted: " + greetUser.getSingleUser(userName) + " " + "time(s)");
-                }else {
-                    System.out.println("Greeted users" + " | " + greetUser.getGreeted());
-            }
-            }
+                    String greetType = "Isixhosa".toLowerCase();
+                    Languages.valueOf(greetType);
+                    System.out.println(greetUser.greet(userName, greetType));
+                } else if ("greet".equalsIgnoreCase(command) && commandUser.length > 1) {
+                    String userName = commandUser[1];
+                    String lang = commandUser[2].toLowerCase();
+                    System.out.println("----------------------------------");
+                    System.out.println(" " + greetUser.greet(userName, lang));
+                    System.out.println("----------------------------------");
+                    System.out.println("Grand counter" + " | " + greetUser.getMapSize());
+                } else if ("greeted".equalsIgnoreCase(command)) {
+                    if (commandUser.length > 1) {
+                        String userName = commandUser[1];
+                        System.out.println(userName + " " + "you have been greeted: " + greetUser.getSingleUser(userName) + " " + "time(s)");
+                    } else {
+                        System.out.println("Greeted users" + " | " + greetUser.getGreeted());
+                    }
+                } else if ("clear".equalsIgnoreCase(command)) {
+                    if (commandUser.length > 1) {
+                        String userName = commandUser[1];
+                        greetUser.deleteSpecificUsersInsideTheMap(userName);
+                        System.out.println(userName + " " + "Have Been Deleted Successfully..!");
 
-            else if ("clear".equalsIgnoreCase(command)) {
-                if (commandUser.length > 1){
-               String userName = commandUser[1];
-               greetUser.deleteSpecificUsersInsideTheMap(userName);
-                System.out.println(userName + " " + "Have Been Deleted Successfully..!");
-
-           }
-           else {
-                    greetUser.clearAllUsersInTheMap();
-                    System.out.println("All Users Have Been Deleted Successfully..!");
-                }
-            }else if ("help".equalsIgnoreCase(command)) help();
-            else if ("exit".equalsIgnoreCase(command)) exit();
-            else if ("counter".equalsIgnoreCase(command)) {System.out.println("There are" + " | " + greetUser.getMapSize() + " | " + "greeted users");}
-            else
-            if (!command.isEmpty() && commandUser.length > 0) {
+                    } else {
+                        greetUser.clearAllUsersInTheMap();
+                        System.out.println("All Users Have Been Deleted Successfully..!");
+                    }
+                } else if ("help".equalsIgnoreCase(command)) help();
+                else if ("exit".equalsIgnoreCase(command)) exit();
+                else if ("counter".equalsIgnoreCase(command)) {
+                    System.out.println("There are" + " | " + greetUser.getMapSize() + " | " + "greeted users");
+                }else
+                if (!command.isEmpty() && commandUser.length > 0) {
                     System.out.println("-------------------------------------------------");
                     System.out.println("Invalid command type  HELP for valid commands...!");
                     System.out.println("-------------------------------------------------");
+                }
+            } catch (IllegalArgumentException e) {
+                e.printStackTrace();
             }
         }
     }
