@@ -19,17 +19,6 @@ public class Greeted {
         Integer counter = greetedUsers.containsKey(this.userName) ? greetedUsers.get(this.userName) : 0;
         greetedUsers.put(this.userName,counter +1);
 
-        /*
-        //Second approach:
-        //get value of specific key
-            Integer counter = greetedUsers.get(this.userName);
-        //check if hashMap contain no
-        //then initialize it to zero
-            if(counter == null) greetedUsers.put(this.userName, 1);
-            else
-                //increment the key value by 1
-                greetedUsers.put(this.userName, counter + 1);
-         */
         return true;
     }
 

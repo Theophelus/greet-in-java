@@ -3,8 +3,6 @@ package greet;
 public class  Greet {
 
     private String username;
-    Languages languages; // Enum accessor inside this class
-//    Greeted greeted = new Greeted();
 
     public String greetUser(String language, String userName) {
 
@@ -30,15 +28,5 @@ public class  Greet {
 
 
         return language;
-    }
-
-
-    public String getUsername() {
-        return username;
-    }
-
-    //Define a getter method that is going to get greet
-    public boolean getLanguages(String lang) {
-        return languages.getLang().equalsIgnoreCase(lang);
     }
 }
