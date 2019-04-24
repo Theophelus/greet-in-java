@@ -3,7 +3,6 @@ package commands;
 import counter.Counterjdbc;
 import greet.Languages;
 
-import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Commands {
@@ -13,7 +12,7 @@ public class Commands {
     //Define Scanner to read user inputs
     Scanner input = new Scanner(System.in);
 
-    public void runCommands() throws SQLException {
+    public void runCommands() throws IllegalArgumentException {
         printMainHeader();
         greets();
     }
@@ -47,18 +46,16 @@ public class Commands {
                 String userName = commandUser[1];
                 String greetType = "Isixhosa".toLowerCase();
                 Languages.valueOf(greetType);
-                System.out.println("----------------------------------");
                 System.out.println(greetUser.greet(userName, greetType));
-                System.out.println("Counter: " + greetUser.getMapSize());
             }
 
             else if ("greet".equalsIgnoreCase(command) && commandUser.length > 1) {
                 String userName = commandUser[1];
                 String lang =  commandUser[2].toLowerCase();
                 System.out.println("----------------------------------");
-                System.out.println(greetUser.greet(userName, lang));
+                System.out.println(" " + greetUser.greet(userName, lang));
                 System.out.println("----------------------------------");
-                System.out.println("Counter: " + greetUser.getMapSize());
+                System.out.println("Grand counter" + " | " + greetUser.getMapSize());
             }
 
             else if ("greeted".equalsIgnoreCase(command)) {
@@ -66,7 +63,7 @@ public class Commands {
                     String userName = commandUser[1];
                     System.out.println( userName + " " + "you have been greeted: " + greetUser.getSingleUser(userName) + " " + "time(s)");
                 }else {
-                    System.out.println("Greeted users: \n" + " " + greetUser.getGreeted());
+                    System.out.println("Greeted users" + " | " + greetUser.getGreeted());
             }
             }
 
@@ -83,16 +80,13 @@ public class Commands {
                 }
             }else if ("help".equalsIgnoreCase(command)) help();
             else if ("exit".equalsIgnoreCase(command)) exit();
-            else if ("counter".equalsIgnoreCase(command)) System.out.println("Counter: " + greetUser.getMapSize());
+            else if ("counter".equalsIgnoreCase(command)) {System.out.println("There are" + " | " + greetUser.getMapSize() + " | " + "greeted users");}
             else
-                try {
-                    System.out.println("-----------------------------------------------");
-                    System.out.println("invalid command type help for valid commands..!");
-                    System.out.println("-----------------------------------------------");
-
-                }catch (IllegalArgumentException e){
-                    System.out.println("Error: " + e);
-                }
+            if (!command.isEmpty() && commandUser.length > 0) {
+                    System.out.println("-------------------------------------------------");
+                    System.out.println("Invalid command type  HELP for valid commands...!");
+                    System.out.println("-------------------------------------------------");
+            }
         }
     }
 
