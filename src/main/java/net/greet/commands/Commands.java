@@ -35,7 +35,7 @@ public class Commands {
 
         while (selection) {
 
-            System.out.print("Please enter a Command: ");
+            System.out.print("Please enter a Command =>  ");
             String enterCommand = input.nextLine();
 
 
@@ -64,7 +64,7 @@ public class Commands {
                         String userName = commandUser[1];
                         System.out.println(userName + " " + "you have been greeted: " + greetUser.getSingleUser(userName) + " " + "time(s)");
                     } else {
-                        System.out.println("Greeted users" + " | " + greetUser.getGreeted());
+                        System.out.println("No users have been greeted yet..!");
                     }
                 } else if ("clear".equalsIgnoreCase(command)) {
                     if (commandUser.length > 1) {
@@ -76,9 +76,9 @@ public class Commands {
                         greetUser.clearAllUsersInTheMap();
                         System.out.println("All Users Have Been Deleted Successfully..!");
                     }
-                } else if ("help".equalsIgnoreCase(command)) help();
-                else if ("exit".equalsIgnoreCase(command)) exit();
-                else if ("net/greet/dbCounter".equalsIgnoreCase(command)) {
+                } else if ("help".equalsIgnoreCase(command)){ help();}
+                else if ("exit".equalsIgnoreCase(command)) {exit(); }
+                else if ("counter".equalsIgnoreCase(command)) {
                     System.out.println("There are" + " | " + greetUser.getMapSize() + " | " + "greeted users");
                 }else
                 if (!command.isEmpty() && commandUser.length > 0) {
