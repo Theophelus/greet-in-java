@@ -1,14 +1,14 @@
 package net.greet.commands;
 
-import net.greet.dbCounter.Counterjdbc;
+import net.greet.dbCounter.CounterUsingJDBC;
 import net.greet.greet.Languages;
 
 import java.util.Scanner;
 
 public class Commands {
 
-//    GreetUser greetUser = new GreetUser();
-    Counterjdbc greetUser = new Counterjdbc();
+//    GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
+    CounterUsingJDBC greetUser = new CounterUsingJDBC();
     //Define Scanner to read user inputs
     Scanner input = new Scanner(System.in);
 
@@ -47,7 +47,11 @@ public class Commands {
                     String userName = commandUser[1];
                     String greetType = "Isixhosa".toLowerCase();
                     Languages.valueOf(greetType);
+                    System.out.println("----------------------------------");
                     System.out.println(greetUser.greet(userName, greetType));
+                    System.out.println("----------------------------------");
+                    System.out.println("Grand counter" + " | " + greetUser.getMapSize());
+
                 } else if ("greet".equalsIgnoreCase(command) && commandUser.length > 1) {
                     String userName = commandUser[1];
                     String lang = commandUser[2].toLowerCase();

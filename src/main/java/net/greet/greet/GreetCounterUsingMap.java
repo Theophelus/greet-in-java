@@ -1,10 +1,10 @@
 package net.greet.greet;
 
-import net.greet.dbCounter.GreetCounter;
+import net.greet.GreetCounter;
 
 import java.util.Map;
 
-public class GreetUser implements GreetCounter {
+public class GreetCounterUsingMap implements GreetCounter {
 
     Greet greets = new Greet();
     Greeted greeted = new Greeted();

@@ -2,7 +2,7 @@ package greet;
 
 //import static org.junit.jupiter.api.AssertEquals.assertEquals;
 
-import net.greet.greet.GreetUser;
+import net.greet.greet.GreetCounterUsingMap;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -10,13 +10,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GreetUserTest {
     @Test
     public void shouldBeAbleToGreetUser(){
-        GreetUser greetUser = new GreetUser();
+        GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
         assertEquals("Hello, Yegan", greetUser.greet("Yegan","english"));
     }
 
     @Test
     public void shouldGetOneForUserCounter(){
-        GreetUser greetUser = new GreetUser();
+        GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
 
         greetUser.greet("Yegan", "isixhosa");
         greetUser.greet("Ace", "english");
@@ -30,7 +30,7 @@ public class GreetUserTest {
     @Test
     public void shouldBeAbleToReturnTheSizeOfeTheMap(){
 
-        GreetUser greetUser = new GreetUser();
+        GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
         greetUser.greet("Yegan", "isixhosa");
         greetUser.greet("Ace", "english");
         greetUser.greet("Anele", "isizulu");
@@ -44,11 +44,11 @@ public class GreetUserTest {
     }
     @Test
     public void shouldBeToClearHashMap() {
-        GreetUser greetUser = new GreetUser();
+        GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
         //Push names into the hashMap
         greetUser.greet("Anele", "english");
         greetUser.greet("Anele", "isizulu");
-        greetUser.greet("Anele","Isixhosa");
+        greetUser.greet("Anele","isixhosa");
         greetUser.greet("Mbali","english");
         greetUser.clearAllUsersInTheMap();
         assertEquals(greetUser.getGreeted().size(), 0);
@@ -58,7 +58,7 @@ public class GreetUserTest {
     @Test
     public void shouldBeAbleToDeleteSpecificUser(){
 
-        GreetUser greetUser = new GreetUser();
+        GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
         //Push names into the hashMap
         greetUser.greet("Anele", "english");
         greetUser.greet("Anele", "isizulu");

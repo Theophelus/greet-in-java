@@ -1,9 +1,9 @@
 net/greet/greet/Greeted.class
 net/greet/MainGreet.class
+net/greet/GreetCounter.class
 net/greet/greet/Languages.class
 net/greet/commands/Commands.class
 net/greet/greet/Greet$1.class
-net/greet/dbCounter/GreetCounter.class
-net/greet/greet/GreetUser.class
-net/greet/dbCounter/Counterjdbc.class
+net/greet/dbCounter/CounterUsingJDBC.class
 net/greet/greet/Greet.class
+net/greet/greet/GreetCounterUsingMap.class

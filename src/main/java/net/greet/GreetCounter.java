@@ -1,4 +1,4 @@
-package net.greet.dbCounter;
+package net.greet;
 
 import java.util.Map;
 
