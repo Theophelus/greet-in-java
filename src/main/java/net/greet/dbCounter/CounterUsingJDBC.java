@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CounterUsingJDBC implements GreetCounter {
-    //define Hash Map to get name and counter in the table
+
     Greet newGreet = new Greet();
     //SQL
     final String  INSERT_USER_SQL = "INSERT INTO user(user_name, user_count) VALUES (?, ?)";
@@ -83,6 +83,7 @@ public class CounterUsingJDBC implements GreetCounter {
     }
     @Override
     public Map<String, Integer> getGreeted() {
+        //define Hash Map to get name and counter in the table
         Map<String, Integer> storeData = new HashMap<>();
         try {
             //Get results
@@ -122,7 +123,6 @@ public class CounterUsingJDBC implements GreetCounter {
 
     @Override
     public Map<String, Integer> deleteSpecificUsersInsideTheMap(String userName) {
-        Map<String, Integer> storeData = new HashMap<>();
         try {
 //            pDeleteUser.execute();
             pCheckUser.setString(1,userName);
@@ -135,7 +135,7 @@ public class CounterUsingJDBC implements GreetCounter {
         }catch (SQLException e){
             System.out.println("Error: " + e);
         }
-        return storeData;
+        return getGreeted();
     }
 
     @Override
