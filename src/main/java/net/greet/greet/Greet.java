@@ -1,4 +1,4 @@
-package greet;
+package net.greet.greet;
 
 public class  Greet {
 

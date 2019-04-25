@@ -1,8 +1,8 @@
-/home/coder/java-projects/greet-in-java/src/main/java/greet/Greeted.java
-/home/coder/java-projects/greet-in-java/src/main/java/counter/GreetCounter.java
-/home/coder/java-projects/greet-in-java/src/main/java/counter/Counterjdbc.java
-/home/coder/java-projects/greet-in-java/src/main/java/greet/GreetUser.java
-/home/coder/java-projects/greet-in-java/src/main/java/main/MainGreet.java
-/home/coder/java-projects/greet-in-java/src/main/java/greet/Languages.java
-/home/coder/java-projects/greet-in-java/src/main/java/commands/Commands.java
-/home/coder/java-projects/greet-in-java/src/main/java/greet/Greet.java
+/home/coder/java-projects/greet-in-java/src/main/java/net/greet/MainGreet.java
+/home/coder/java-projects/greet-in-java/src/main/java/net/greet/greet/Greeted.java
+/home/coder/java-projects/greet-in-java/src/main/java/net/greet/greet/GreetUser.java
+/home/coder/java-projects/greet-in-java/src/main/java/net/greet/dbCounter/GreetCounter.java
+/home/coder/java-projects/greet-in-java/src/main/java/net/greet/dbCounter/Counterjdbc.java
+/home/coder/java-projects/greet-in-java/src/main/java/net/greet/greet/Greet.java
+/home/coder/java-projects/greet-in-java/src/main/java/net/greet/greet/Languages.java
+/home/coder/java-projects/greet-in-java/src/main/java/net/greet/commands/Commands.java

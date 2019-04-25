@@ -1,6 +1,6 @@
-package main;
+package net.greet;
 
-import commands.Commands;
+import net.greet.commands.Commands;
 
 import java.sql.SQLException;
 

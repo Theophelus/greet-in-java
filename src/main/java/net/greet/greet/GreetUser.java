@@ -1,6 +1,6 @@
-package greet;
+package net.greet.greet;
 
-import counter.GreetCounter;
+import net.greet.dbCounter.GreetCounter;
 
 import java.util.Map;
 

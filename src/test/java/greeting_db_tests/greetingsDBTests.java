@@ -1,6 +1,6 @@
 package greeting_db_tests;
 
-import counter.Counterjdbc;
+import net.greet.dbCounter.Counterjdbc;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,6 @@
-package counter;
+package net.greet.dbCounter;
 
-import greet.Greet;
+import net.greet.greet.Greet;
 
 import java.sql.*;
 import java.util.HashMap;

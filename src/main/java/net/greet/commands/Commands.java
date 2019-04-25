@@ -1,7 +1,7 @@
-package commands;
+package net.greet.commands;
 
-import counter.Counterjdbc;
-import greet.Languages;
+import net.greet.dbCounter.Counterjdbc;
+import net.greet.greet.Languages;
 
 import java.util.Scanner;
 
@@ -74,7 +74,7 @@ public class Commands {
                     }
                 } else if ("help".equalsIgnoreCase(command)) help();
                 else if ("exit".equalsIgnoreCase(command)) exit();
-                else if ("counter".equalsIgnoreCase(command)) {
+                else if ("net/greet/dbCounter".equalsIgnoreCase(command)) {
                     System.out.println("There are" + " | " + greetUser.getMapSize() + " | " + "greeted users");
                 }else
                 if (!command.isEmpty() && commandUser.length > 0) {

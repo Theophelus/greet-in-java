@@ -1,14 +1,13 @@
-package counter;
+package net.greet.dbCounter;
 
-import java.sql.SQLException;
 import java.util.Map;
 
 public interface GreetCounter {
     String greet(String userName, String lang);
-    Map<String, Integer> getGreeted();
+    Map getGreeted();
     //Define a method to get single user in the map
     Integer getSingleUser(String userName);
-    short getMapSize() throws SQLException;
-    Map<String, Integer> deleteSpecificUsersInsideTheMap(String userName);
+    short getMapSize();
+    Map deleteSpecificUsersInsideTheMap(String userName);
     void clearAllUsersInTheMap();
 }

@@ -2,6 +2,7 @@ package greet;
 
 //import static org.junit.jupiter.api.AssertEquals.assertEquals;
 
+import net.greet.greet.GreetUser;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

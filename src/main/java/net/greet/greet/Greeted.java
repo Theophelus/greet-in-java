@@ -1,4 +1,4 @@
-package greet;
+package net.greet.greet;
 
 import java.util.HashMap;
 import java.util.Iterator;
