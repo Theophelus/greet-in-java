@@ -64,7 +64,8 @@ public class Commands {
                         String userName = commandUser[1];
                         System.out.println(userName + " " + "you have been greeted: " + greetUser.getSingleUser(userName) + " " + "time(s)");
                     } else {
-                        System.out.println("No users have been greeted yet..!");
+//                        System.out.println("No users have been greeted yet..!");
+                        System.out.println("All greeted users" + " |  " + greetUser.getGreeted());
                     }
                 } else if ("clear".equalsIgnoreCase(command)) {
                     if (commandUser.length > 1) {
