@@ -12,21 +12,19 @@ public class  Greet {
 
             switch (Languages.valueOf(language)) {
                 case isixhosa:
+//                    System.out.println(Languages.valueOf(language).getLang() + ", " + username);
                     return  Languages.valueOf(language).getLang() + ", " + username;
                 case english:
                     return  Languages.valueOf(language).getLang() + ", " + username;
                 case isizulu:
+//
                     return  Languages.valueOf(language).getLang() + ", " + username;
                 default:
                     return Languages.isixhosa.getLang() + " " + username;
             }
-
         }catch (IllegalArgumentException e) {
             System.out.println("Error: " + e);
-
         }
-
-
         return language;
     }
 }

@@ -25,9 +25,9 @@ public class greetingsDBTests {
 
         try {
 
-            try(Connection conn = getConnection()) {
+            try(Connection con = getConnection()) {
                 // I repeat don't touch any code in here!!!
-                Statement statement = conn.createStatement();
+                Statement statement = con.createStatement();
                 statement.addBatch("DELETE FROM user");
                 statement.executeBatch();
                 // I repeat once again don't touch any code in here!!!

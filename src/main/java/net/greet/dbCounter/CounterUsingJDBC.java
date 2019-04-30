@@ -32,15 +32,15 @@ public class CounterUsingJDBC implements GreetCounter {
     PreparedStatement pDeleteUser;
     PreparedStatement pDeleteAll;
     PreparedStatement pGetAll;
-    //Define a method to for connecton String
+    //Define a constructor to for connection String
     public CounterUsingJDBC() {
         try{
+            //Register Drivers
+            Class.forName("org.h2.Driver");
             ///Define three strings
             final String URL = "jdbc:h2:./target/user";
             String user = "sa";
             String password = "";
-            //Register Drivers
-            Class.forName("org.h2.Driver");
             //Define a method to create connection strings to the database
             con = DriverManager
                     .getConnection(URL,user,password);
@@ -79,6 +79,7 @@ public class CounterUsingJDBC implements GreetCounter {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+        System.out.println();
         return newGreet.greetUser(lang, user_name);
     }
     @Override
