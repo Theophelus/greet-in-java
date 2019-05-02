@@ -35,12 +35,13 @@ public class CounterUsingJDBC implements GreetCounter {
     //Define a constructor to for connection String
     public CounterUsingJDBC() {
         try{
-            //Register Drivers
-            Class.forName("org.h2.Driver");
+
             ///Define three strings
             final String URL = "jdbc:h2:./target/user";
             String user = "sa";
             String password = "";
+            //Register Drivers
+            Class.forName("org.h2.Driver");
             //Define a method to create connection strings to the database
             con = DriverManager
                     .getConnection(URL,user,password);

@@ -1,25 +1,27 @@
 import net.greet.commands.CommandExtractor;
 import net.greet.commands.CommandsProcessor;
-import net.greet.dbCounter.CounterUsingJDBC;
+import net.greet.greet.GreetCounterUsingMap;
 import net.greet.greet.Languages;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CommandProcessorTests {
-    CounterUsingJDBC greetUser = new CounterUsingJDBC();
+//    CounterUsingJDBC greetUser = new CounterUsingJDBC();
+    GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
     CommandsProcessor  commandsProcessor = new CommandsProcessor();
 
     @Test
     public void shouldBeAbleToCheckGreatDefaultLang(){
         try {
+            CommandExtractor commandExtractor = new CommandExtractor("greet a");
+//            System.out.println(greetUser.greet(commandExtractor.getUserName(), String.valueOf(Languages.isixhosa)));
+            assertEquals(greetUser.greet(commandExtractor.getUserName(), String.valueOf(Languages.isixhosa)),
+                    commandsProcessor.greets("greet a"));
 
         }catch (NullPointerException e){
             System.out.println("Error: " + e);
         }
-         CommandExtractor commandExtractor = new CommandExtractor("greet a");
-        assertEquals(greetUser.greet(commandExtractor.getUserName(), String.valueOf(Languages.isixhosa)),
-                commandsProcessor.greets("greet a"));
     }
 
     @Test

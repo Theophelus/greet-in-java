@@ -5,7 +5,14 @@ import net.greet.greet.Languages;
 
 public class CommandsProcessor {
 //    GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
-    CounterUsingJDBC greetUser  = new CounterUsingJDBC();
+    CounterUsingJDBC greetUser;
+
+    public CommandsProcessor() {
+        this.greetUser = new CounterUsingJDBC();
+    }
+
+    String result;
+
     public String greets(String commands) {
         CommandExtractor commandExtractor = new CommandExtractor(commands);
             try {
@@ -32,7 +39,6 @@ public class CommandsProcessor {
                     else {
                         greetUser.clearAllUsersInTheMap();
                         return ("All Users Have Been Deleted Successfully..!");
-
                     }
                 } else if ("help".equalsIgnoreCase(commandExtractor.getCommand())){ help();}
                 else if ("counter".equalsIgnoreCase(commandExtractor.getCommand())) {
@@ -46,7 +52,7 @@ public class CommandsProcessor {
                 e.printStackTrace();
             }
 
-            return commands;
+            return "";
     }
     //Define a method for help
     public void help(){
