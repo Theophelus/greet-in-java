@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27fb81b3-d629-4eed-ab0c-47af49aceca6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/commands/CommandsProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/commands/CommandsProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/dbCounter/CounterUsingJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/dbCounter/CounterUsingJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CommandProcessorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommandProcessorTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/commands/CommandsProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/commands/CommandsProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/dbCounter/CounterUsingJDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/dbCounter/CounterUsingJDBC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/greet-in-java-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/greet-in-java-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CommandProcessorTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CommandProcessorTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-CommandProcessorTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-CommandProcessorTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-greet.GreetTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-greet.GreetTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-greet.GreetUserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-greet.GreetUserTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-greet.GreetedTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-greet.GreetedTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-greeting_db_tests.greetingsDBTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-greeting_db_tests.greetingsDBTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/greet.GreetUserTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/greet.GreetUserTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/greeting_db_tests.greetingsDBTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/greeting_db_tests.greetingsDBTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CommandProcessorTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CommandProcessorTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/user.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/user.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/user.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/user.trace.db" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CommandProcessorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            <state relative-caret-position="1113">
+              <caret line="53" column="99" lean-forward="true" selection-start-line="53" selection-start-column="99" selection-end-line="53" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,8 +128,8 @@
         <option value="$PROJECT_DIR$/src/main/java/net/greet/MainGreet.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/commands/CommandsProcessor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/CommandProcessorTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/dbCounter/CounterUsingJDBC.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CommandProcessorTests.java" />
       </list>
     </option>
   </component>
@@ -313,7 +294,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CommandProcessorTests.shouldBeAbleToCheckSpecificGreetedUser">
+  <component name="RunManager" selected="JUnit.CommandProcessorTests">
     <configuration name="MainGreet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="net.greet.MainGreet" />
       <module name="greet-in-java" />
@@ -376,9 +357,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommandProcessorTests" />
         <item itemvalue="JUnit.CommandProcessorTests.shouldBeAbleToCheckSpecificGreetedUser" />
         <item itemvalue="JUnit.CommandProcessorTests.shouldBeAbleToCheckAllGreetedUsers" />
-        <item itemvalue="JUnit.CommandProcessorTests" />
         <item itemvalue="JUnit.CommandProcessorTests.shouldBeAbleToCheckGreatDefaultLang" />
         <item itemvalue="Application.MainGreet" />
       </list>
@@ -398,27 +379,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommandProcessorTests_shouldBeAbleToCheckGreatDefaultLang - 2019.05.02 at 15h 39m 23s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToCheckGreatDefaultLang" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandProcessorTests_shouldBeAbleToCheckGreatDefaultLang - 2019.05.02 at 15h 43m 20s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToCheckGreatDefaultLang" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandProcessorTests_shouldBeAbleToCheckGreatDefaultLang - 2019.05.02 at 15h 45m 17s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToCheckGreatDefaultLang" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandProcessorTests - 2019.05.02 at 15h 54m 15s.xml">
-      <configuration name="CommandProcessorTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandProcessorTests - 2019.05.02 at 15h 57m 03s.xml">
-      <configuration name="CommandProcessorTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandProcessorTests - 2019.05.02 at 15h 58m 28s.xml">
-      <configuration name="CommandProcessorTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandProcessorTests - 2019.05.02 at 15h 59m 55s.xml">
-      <configuration name="CommandProcessorTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CommandProcessorTests - 2019.05.02 at 16h 09m 18s.xml">
       <configuration name="CommandProcessorTests" configurationId="JUnit" />
     </history-entry>
@@ -427,6 +387,27 @@
     </history-entry>
     <history-entry file="CommandProcessorTests - 2019.05.02 at 16h 11m 24s.xml">
       <configuration name="CommandProcessorTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandProcessorTests_shouldBeAbleToCheckAllGreetedUsers - 2019.05.02 at 16h 13m 24s.xml">
+      <configuration name="CommandProcessorTests.shouldBeAbleToCheckAllGreetedUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandProcessorTests_shouldBeAbleToCheckSpecificGreetedUser - 2019.05.02 at 16h 13m 40s.xml">
+      <configuration name="CommandProcessorTests.shouldBeAbleToCheckSpecificGreetedUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandProcessorTests_shouldBeAbleToCheckAllGreetedUsers - 2019.05.02 at 16h 20m 52s.xml">
+      <configuration name="CommandProcessorTests.shouldBeAbleToCheckAllGreetedUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandProcessorTests_shouldBeAbleToCheckSpecificGreetedUser - 2019.05.02 at 16h 21m 04s.xml">
+      <configuration name="CommandProcessorTests.shouldBeAbleToCheckSpecificGreetedUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandProcessorTests_shouldBeAbleToCheckSpecificGreetedUser - 2019.05.02 at 16h 22m 24s.xml">
+      <configuration name="CommandProcessorTests.shouldBeAbleToCheckSpecificGreetedUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandProcessorTests_shouldBeAbleToCheckSpecificGreetedUser - 2019.05.02 at 16h 23m 04s.xml">
+      <configuration name="CommandProcessorTests.shouldBeAbleToCheckSpecificGreetedUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandProcessorTests_shouldBeAbleToCheckSpecificGreetedUser - 2019.05.02 at 16h 24m 18s.xml">
+      <configuration name="CommandProcessorTests.shouldBeAbleToCheckSpecificGreetedUser" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -442,7 +423,7 @@
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26533866" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26533866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -455,12 +436,12 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32822084" />
-      <window_info anchor="bottom" content_ui="combo" id="Run" order="2" sideWeight="0.4996016" weight="0.9550225" />
+      <window_info anchor="bottom" content_ui="combo" id="Run" order="2" sideWeight="0.4996016" weight="0.4527736" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.52923536" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32833582" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49880478" visible="true" weight="0.3958021" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49880478" weight="0.9550225" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5011952" side_tool="true" weight="0.7466267" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.28785607" />
@@ -797,8 +778,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CommandProcessorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        <state relative-caret-position="1113">
+          <caret line="53" column="99" lean-forward="true" selection-start-line="53" selection-start-column="99" selection-end-line="53" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

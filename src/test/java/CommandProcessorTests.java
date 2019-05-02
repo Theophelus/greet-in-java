@@ -1,14 +1,14 @@
 import net.greet.commands.CommandExtractor;
 import net.greet.commands.CommandsProcessor;
-import net.greet.greet.GreetCounterUsingMap;
+import net.greet.dbCounter.CounterUsingJDBC;
 import net.greet.greet.Languages;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CommandProcessorTests {
-//    CounterUsingJDBC greetUser = new CounterUsingJDBC();
-    GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
+    CounterUsingJDBC greetUser = new CounterUsingJDBC();
+//    GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
     CommandsProcessor  commandsProcessor = new CommandsProcessor();
 
     @Test
