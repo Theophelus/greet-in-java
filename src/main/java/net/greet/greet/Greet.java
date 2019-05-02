@@ -17,7 +17,6 @@ public class  Greet {
                 case english:
                     return  Languages.valueOf(language).getLang() + ", " + username;
                 case isizulu:
-//
                     return  Languages.valueOf(language).getLang() + ", " + username;
                 default:
                     return Languages.isixhosa.getLang() + " " + username;

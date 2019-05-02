@@ -5,17 +5,12 @@ import net.greet.greet.Languages;
 
 public class CommandsProcessor {
 //    GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
-    CounterUsingJDBC greetUser = new CounterUsingJDBC();
-
-    public String greets(String result) {
-
-        CommandExtractor commandExtractor = new CommandExtractor(result);
-
+    CounterUsingJDBC greetUser  = new CounterUsingJDBC();
+    public String greets(String commands) {
+        CommandExtractor commandExtractor = new CommandExtractor(commands);
             try {
                 if ("greet".equalsIgnoreCase(commandExtractor.getCommand()) && commandExtractor.getCommandLength()  == 2 ) {
-                    String greetType = "Isixhosa".toLowerCase();
-                    Languages.valueOf(greetType);
-                    return greetUser.greet(commandExtractor.getUserName(), greetType);
+                    return greetUser.greet(commandExtractor.getUserName(), String.valueOf(Languages.isixhosa));
                 }
                  else
                      if ("greet".equalsIgnoreCase(commandExtractor.getCommand()) && commandExtractor.getCommandLength() > 1) {
@@ -37,9 +32,9 @@ public class CommandsProcessor {
                     else {
                         greetUser.clearAllUsersInTheMap();
                         return ("All Users Have Been Deleted Successfully..!");
+
                     }
                 } else if ("help".equalsIgnoreCase(commandExtractor.getCommand())){ help();}
-//                else if ("exit".equalsIgnoreCase(command)) {exit(); }
                 else if ("counter".equalsIgnoreCase(commandExtractor.getCommand())) {
                     return ("There are" + " | " + greetUser.getMapSize() + " | " + "greeted users");
                 }
@@ -51,9 +46,8 @@ public class CommandsProcessor {
                 e.printStackTrace();
             }
 
-            return "";
+            return commands;
     }
-
     //Define a method for help
     public void help(){
         System.out.println("*****************Valid CommandsProcessor*****************");
@@ -65,10 +59,7 @@ public class CommandsProcessor {
                 + "[ clear ] followed by a username delete the greet counter for the specified user and decrement the greet counter by 1, \n"
                 + "[ exit ] exits the application,\n");
     }
-//    public String runCommands() throws IllegalArgumentException {
-////        greets();
-//        return "";
-//    }
+
     //Define a method to for headers
     private void printMainHeader() {
         System.out.println("----------------------------------------------------------------------------------------");
