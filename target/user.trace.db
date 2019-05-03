@@ -1,7 +1,7 @@
-2019-05-02 16:28:04 jdbc[3]: exception
+2019-05-03 10:46:10 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
-2019-05-02 16:28:04 jdbc[3]: exception
+2019-05-03 10:46:10 jdbc[3]: exception
 org.h2.jdbc.JdbcBatchUpdateException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:792)
@@ -138,13 +138,13 @@ DELETE FROM user [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2019-05-02 16:28:04 jdbc[3]: exception
+2019-05-03 10:46:10 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-02 16:28:04 jdbc[4]: exception
+2019-05-03 10:46:11 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
-2019-05-02 16:28:04 jdbc[4]: exception
+2019-05-03 10:46:11 jdbc[4]: exception
 org.h2.jdbc.JdbcBatchUpdateException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:792)
@@ -281,13 +281,13 @@ DELETE FROM user [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2019-05-02 16:28:05 jdbc[5]: exception
+2019-05-03 10:46:11 jdbc[5]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-02 16:28:05 jdbc[6]: exception
+2019-05-03 10:46:11 jdbc[6]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
-2019-05-02 16:28:05 jdbc[6]: exception
+2019-05-03 10:46:11 jdbc[6]: exception
 org.h2.jdbc.JdbcBatchUpdateException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:792)
@@ -424,13 +424,13 @@ DELETE FROM user [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2019-05-02 16:28:05 jdbc[7]: exception
+2019-05-03 10:46:11 jdbc[7]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-02 16:28:05 jdbc[8]: exception
+2019-05-03 10:46:11 jdbc[8]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
-2019-05-02 16:28:05 jdbc[8]: exception
+2019-05-03 10:46:11 jdbc[8]: exception
 org.h2.jdbc.JdbcBatchUpdateException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:792)
@@ -567,13 +567,13 @@ DELETE FROM user [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2019-05-02 16:28:05 jdbc[9]: exception
+2019-05-03 10:46:11 jdbc[9]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-02 16:28:05 jdbc[10]: exception
+2019-05-03 10:46:11 jdbc[10]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
-2019-05-02 16:28:05 jdbc[10]: exception
+2019-05-03 10:46:11 jdbc[10]: exception
 org.h2.jdbc.JdbcBatchUpdateException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:792)
@@ -710,27 +710,48 @@ DELETE FROM user [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2019-05-02 16:28:05 jdbc[11]: exception
+2019-05-03 10:46:11 jdbc[11]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-02 16:28:05 jdbc[12]: exception
+2019-05-03 10:46:11 jdbc[12]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-02 16:28:05 jdbc[13]: exception
+2019-05-03 10:46:11 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-02 16:28:05 jdbc[14]: exception
+2019-05-03 10:46:11 jdbc[14]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-02 16:28:05 jdbc[15]: exception
+2019-05-03 10:46:11 jdbc[15]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-02 16:28:05 jdbc[16]: exception
+2019-05-03 10:46:11 jdbc[16]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-02 16:28:05 jdbc[17]: exception
+2019-05-03 10:46:11 jdbc[17]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-02 16:28:05 jdbc[18]: exception
+2019-05-03 10:46:11 jdbc[18]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
+2019-05-03 10:46:11 jdbc[19]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
+2019-05-03 10:46:11 jdbc[20]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
+2019-05-03 10:46:11 jdbc[21]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
+2019-05-03 10:46:11 jdbc[22]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
+2019-05-03 10:46:11 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
+2019-05-03 10:46:11 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
+2019-05-03 10:46:11 jdbc[25]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]

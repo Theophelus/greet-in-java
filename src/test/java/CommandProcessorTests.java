@@ -12,30 +12,22 @@ public class CommandProcessorTests {
     CommandsProcessor  commandsProcessor = new CommandsProcessor();
 
     @Test
-    public void shouldBeAbleToCheckGreatDefaultLang(){
-        try {
-            CommandExtractor commandExtractor = new CommandExtractor("greet a");
+    public void shouldBeAbleToCheckGreatDefaultLang() throws Exception {
+        CommandExtractor commandExtractor = new CommandExtractor("greet a");
 //            System.out.println(greetUser.greet(commandExtractor.getUserName(), String.valueOf(Languages.isixhosa)));
-            assertEquals(greetUser.greet(commandExtractor.getUserName(), String.valueOf(Languages.isixhosa)),
-                    commandsProcessor.greets("greet a"));
+        assertEquals(greetUser.greet(commandExtractor.getUserName(), String.valueOf(Languages.isixhosa)),
+                commandsProcessor.greets("greet a"));
 
-        }catch (NullPointerException e){
-            System.out.println("Error: " + e);
-        }
     }
 
     @Test
-    public void shouldBeAbleToGreetInEnglish(){
-        try {
-            CommandExtractor commandExtractor = new CommandExtractor("greet a english");
-            assertEquals(greetUser.greet(commandExtractor.getUserName(), commandExtractor.getLang()),
-                    commandsProcessor.greets("greet a english"));
-        }catch (NullPointerException e){
-            System.out.println("Error: " + e);
-        }
+    public void shouldBeAbleToGreetInEnglish() throws NullPointerException {
+        CommandExtractor commandExtractor = new CommandExtractor("greet a english");
+        assertEquals(greetUser.greet(commandExtractor.getUserName(), commandExtractor.getLang()),
+                commandsProcessor.greets("greet a english"));
     }
     @Test
-    public void shouldBeAbleToCheckAllGreetedUsers(){
+    public void shouldBeAbleToCheckAllGreetedUsers() {
         try {
             assertEquals("All greeted users | " + " " + greetUser.getGreeted(),
                     commandsProcessor.greets("greeted"));
@@ -45,16 +37,12 @@ public class CommandProcessorTests {
         }
     }
     @Test
-    public void shouldBeAbleToCheckSpecificGreetedUser(){
-        try {
-            CommandExtractor commandExtractor = null;
-            new CommandExtractor("greeted  " + (commandExtractor != null ? commandExtractor.getUserName() : null) + " ");
-            assertEquals((commandExtractor != null ? commandExtractor.getUserName() : null) + " " +
-                            "you have been greeted: " +
-                            greetUser.getSingleUser(commandExtractor != null ? commandExtractor.getUserName() : null) + " " + "time(s)",
-                    commandsProcessor.greets(String.format("greeted %s ", commandExtractor != null ? commandExtractor.getUserName() : null)));
-        }catch (NullPointerException e){
-            System.out.println("Error: " + e);
+    public void shouldBeAbleToCheckSpecificGreetedUser() {
+        CommandExtractor commandExtractor = null;
+        new CommandExtractor("greeted a");
+        if (commandExtractor != null) {
+            assertEquals(String.format( commandExtractor.getUserName() + "you have been greeted: %d time(s)", greetUser.getSingleUser(commandExtractor.getUserName())),
+                    commandsProcessor.greets(String.format("greeted %s ", commandExtractor.getUserName())));
         }
     }
     @Test
