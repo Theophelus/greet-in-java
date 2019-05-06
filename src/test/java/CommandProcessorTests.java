@@ -28,12 +28,10 @@ public class CommandProcessorTests {
     }
     @Test
     public void shouldBeAbleToClearAllUsers() throws NullPointerException{
-        greetUser.clearAllUsersInTheMap();
         assertEquals("All Users Have Been Deleted Successfully..!", commandsProcessor.execute("clear"));
     }
     @Test
     public void shouldBeAbleToClearSpecificUser() throws NullPointerException{
-        greetUser.deleteSpecificUsersInsideTheMap("anele");
         assertEquals("anele Have Been Deleted Successfully..!", commandsProcessor.execute("clear anele"));
     }
     @Test
