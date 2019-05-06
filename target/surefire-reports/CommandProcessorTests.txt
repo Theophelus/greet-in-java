@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: CommandProcessorTests
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.255 s <<< FAILURE! - in CommandProcessorTests
+shouldBeAbleToClearAllUsers  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at CommandProcessorTests.shouldBeAbleToClearAllUsers(CommandProcessorTests.java:31)
+
+shouldBeAbleToCheckSpecificGreetedUser  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at CommandProcessorTests.shouldBeAbleToCheckSpecificGreetedUser(CommandProcessorTests.java:26)
+
+shouldBeAbleToClearSpecificUser  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at CommandProcessorTests.shouldBeAbleToClearSpecificUser(CommandProcessorTests.java:36)
+
+shouldBeAbleToCheckAllGreetedUsers  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at CommandProcessorTests.shouldBeAbleToCheckAllGreetedUsers(CommandProcessorTests.java:22)
+
