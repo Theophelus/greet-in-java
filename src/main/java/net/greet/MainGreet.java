@@ -1,6 +1,7 @@
 package net.greet;
 
 import net.greet.commands.CommandsProcessor;
+import net.greet.dbCounter.CounterUsingJDBC;
 
 import java.util.Scanner;
 
@@ -9,7 +10,9 @@ class MainGreet {
 
 public static void main(String[] args){
     //Define an instance of CommandsProcessor class
-    CommandsProcessor commands = new CommandsProcessor();
+    //GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
+    CounterUsingJDBC greetUser = new CounterUsingJDBC();
+    CommandsProcessor commands = new CommandsProcessor(greetUser);
     System.out.println("----------------------------------------------------------------------------------------");
     System.out.println("                             ***  WELCOME TO MY  ***                                    ");
     System.out.println("               ************ GREETINGS CONSOLE APPLICATION  ************                 ");

@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CommandProcessorTests {
     CounterUsingJDBC greetUser = new CounterUsingJDBC();
 //    GreetCounterUsingMap greetUser = new GreetCounterUsingMap();
-    CommandsProcessor commandsProcessor = new CommandsProcessor();
+    CommandsProcessor commandsProcessor = new CommandsProcessor(greetUser);
 
     @Test
     public void shouldBeAbleToCheckGreatDefaultLang() throws NullPointerException {

@@ -6,35 +6,34 @@ public class CommandExtractor {
     String userName;
     String lang;
 
-    public CommandExtractor(String commands)
-    {
+    public CommandExtractor(String commands) {
         this.command = commands.trim().split(" ");
+
+        if (getCommandLength() > 1) {
+            this.userName =command[1];
+        }
+        else {this.userName = "";}
+        if (getCommandLength() == 3) {
+            this.lang = command[2];
+        } else
+        {this.lang = "";}
     }
     public String getCommand() {
         return command[0];
     }
 
     public  boolean hasName(){
-        if (command.length == 2) {
-            this.userName =command[1];
-        }
-        else return Boolean.parseBoolean("");
-        return true;
+        return !userName.isEmpty();
     }
     public  boolean hasLangauge(){
-        if (command.length == 3) this.lang = command[2];
-        else return Boolean.parseBoolean("");
-        return true;
+        return !lang.isEmpty();
     }
 
-
     public String getUserName() {
-       this.userName = command[1];
         return this.userName;
     }
 
     public String getLang() {
-        this.lang = command[2];
         return this.lang;
     }
     public int getCommandLength() {

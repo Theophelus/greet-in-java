@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: CommandProcessorTests
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.136 s <<< FAILURE! - in CommandProcessorTests
+Tests run: 7, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.074 s <<< FAILURE! - in CommandProcessorTests
 shouldBeAbleToClearAllUsers  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.NullPointerException
 	at CommandProcessorTests.shouldBeAbleToClearAllUsers(CommandProcessorTests.java:31)
