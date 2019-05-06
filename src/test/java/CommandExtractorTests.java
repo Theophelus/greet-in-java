@@ -21,9 +21,18 @@ public class CommandExtractorTests {
         assertEquals(true, commandExtractor.hasName());
     }
     @Test
+    public void shouldGetAllCommands(){
+        CommandExtractor commandExtractor = new CommandExtractor("greet anele");
+        assertEquals(true, commandExtractor.hasName());
+        assertEquals("greet", commandExtractor.getCommand());
+        assertEquals("anele", commandExtractor.getUserName());
+        assertEquals("", commandExtractor.getLang());
+    }
+
+    @Test
     public void shouldBeAbleToCheckCommandExtractorHasLangThenReturnTrue(){
         CommandExtractor commandExtractor = new CommandExtractor("greet anele isixhosa");
-        assertEquals(true, commandExtractor.hasLangauge());
+        assertEquals(true, commandExtractor.hasLanguage());
     }
     @Test
     public void shouldBeAbleToCheckItGetCommandAndName(){

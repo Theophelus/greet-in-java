@@ -15,18 +15,19 @@ public class CommandsProcessor {
         CommandExtractor commandExtractor = new CommandExtractor(commands);
             try {
                 if ("greet".equalsIgnoreCase(commandExtractor.getCommand())) {
-                    if (commandExtractor.hasName() && commandExtractor.hasLangauge()) {
+                    if (commandExtractor.hasName() && commandExtractor.hasLanguage()) {
                         return greetCounter.greet(commandExtractor.getUserName(), commandExtractor.getLang());
                     }
-                    else {return greetCounter.greet(commandExtractor.getUserName(), (Languages.isixhosa).toString());}
+                    else
+                    {return greetCounter.greet(commandExtractor.getUserName(), (Languages.isixhosa).toString());}
                 }
-                else if ("greeted".equalsIgnoreCase(commandExtractor.getCommand())) {
-                        if (commandExtractor.hasName()) {
-                            return (commandExtractor.getUserName() + " " + "you have been greeted: " + greetCounter.getSingleUser(commandExtractor.getUserName()) + " " + "time(s)");
-                        } else {
-                            return ("All greeted users" + " |  " + greetCounter.getGreeted());
-                        }
+               else if ("greeted".equalsIgnoreCase(commandExtractor.getCommand())) {
+                    if (commandExtractor.hasName()) {
+                        return (commandExtractor.getUserName() + " " + "you have been greeted: " + greetCounter.getSingleUser(commandExtractor.getUserName()) + " " + "time(s)");
+                    } else {
+                        return ("All greeted users" + " |  " + greetCounter.getGreeted());
                     }
+                }
                 else if ("clear".equalsIgnoreCase(commandExtractor.getCommand())) {
                     if (commandExtractor.hasName()) {
                         greetCounter.deleteSpecificUsersInsideTheMap(commandExtractor.getUserName());
@@ -42,9 +43,7 @@ public class CommandsProcessor {
                 }
                 else
                 if (!commandExtractor.getCommand().isEmpty()) {
-                    if (commandExtractor.hasName()) {
-                        return ("Invalid command type  HELP for valid commands...!");
-                    }
+                    return ("Invalid command type  HELP for valid commands...!");
                 }
             } catch (IllegalArgumentException e) {
                 e.printStackTrace();

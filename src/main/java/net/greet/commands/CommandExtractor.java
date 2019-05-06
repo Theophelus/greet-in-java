@@ -2,30 +2,32 @@ package net.greet.commands;
 
 public class CommandExtractor {
 
-    String[] command;
-    String userName;
-    String lang;
+    String command;
+    String userName = "";
+    String lang = "";
 
     public CommandExtractor(String commands) {
-        this.command = commands.trim().split(" ");
 
-        if (getCommandLength() > 1) {
-            this.userName =command[1];
+        String[] commandProcessor = commands.trim().split(" ");
+
+        this.command = commandProcessor[0].toLowerCase();
+
+        if (commandProcessor.length > 1) {
+            this.userName =commandProcessor[1];
         }
-        else {this.userName = "";}
-        if (getCommandLength() == 3) {
-            this.lang = command[2];
-        } else
-        {this.lang = "";}
+        if (commandProcessor.length == 3) {
+            this.lang = commandProcessor[2];
+        }
     }
+
     public String getCommand() {
-        return command[0];
+        return this.command;
     }
 
     public  boolean hasName(){
         return !userName.isEmpty();
     }
-    public  boolean hasLangauge(){
+    public  boolean hasLanguage(){
         return !lang.isEmpty();
     }
 
@@ -35,8 +37,5 @@ public class CommandExtractor {
 
     public String getLang() {
         return this.lang;
-    }
-    public int getCommandLength() {
-        return command.length;
     }
 }
