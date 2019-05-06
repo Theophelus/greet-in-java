@@ -11,47 +11,46 @@ public class CommandsProcessor {
         this.greetUser = new CounterUsingJDBC();
     }
 
-    String result;
 
-    public String greets(String commands) {
+    public String execute(String commands) {
         CommandExtractor commandExtractor = new CommandExtractor(commands);
             try {
-                if ("greet".equalsIgnoreCase(commandExtractor.getCommand()) && commandExtractor.getCommandLength()  == 2 ) {
-                    return greetUser.greet(commandExtractor.getUserName(), String.valueOf(Languages.isixhosa));
-                }
-                 else
-                     if ("greet".equalsIgnoreCase(commandExtractor.getCommand()) && commandExtractor.getCommandLength() > 1) {
-                    return greetUser.greet(commandExtractor.getUserName(), commandExtractor.getLang());
-                }
-                else
-                    if ("greeted".equalsIgnoreCase(commandExtractor.getCommand())) {
-                        if (commandExtractor.getCommandLength() > 1) {
-                            return (commandExtractor.getUserName() + " " + "you have been greeted: " + greetUser.getSingleUser(commandExtractor.getUserName()) + " " + "time(s)");
-                        }
-                    else {
-                        return ("All greeted users" + " |  " + greetUser.getGreeted());
+                if ("greet".equalsIgnoreCase(commandExtractor.getCommand())) {
+                    if (commandExtractor.hasName() && commandExtractor.hasLangauge()) {
+                        return greetUser.greet(commandExtractor.getUserName(), commandExtractor.getLang());
                     }
-                } else if ("clear".equalsIgnoreCase(commandExtractor.getCommand())) {
-                    if (commandExtractor.getCommandLength() > 1) {
+                    if (commandExtractor.hasName())
+                        return greetUser.greet(commandExtractor.getUserName(), (Languages.isixhosa).toString());
+                    else return greetUser.greet(commandExtractor.getUserName(), commandExtractor.getLang());
+                }
+                else if ("greeted".equalsIgnoreCase(commandExtractor.getCommand())) {
+                        if (commandExtractor.hasName()) {
+                            return (commandExtractor.getUserName() + " " + "you have been greeted: " + greetUser.getSingleUser(commandExtractor.getUserName()) + " " + "time(s)");
+                        } else {
+                            return ("All greeted users" + " |  " + greetUser.getGreeted());
+                        }
+                    }
+                else if ("clear".equalsIgnoreCase(commandExtractor.getCommand())) {
+                    if (commandExtractor.hasName()) {
                         greetUser.deleteSpecificUsersInsideTheMap(commandExtractor.getUserName());
                         return (commandExtractor.getUserName() + " " + "Have Been Deleted Successfully..!");
-                    }
-                    else {
+                    } else {
                         greetUser.clearAllUsersInTheMap();
                         return ("All Users Have Been Deleted Successfully..!");
                     }
-                } else if ("help".equalsIgnoreCase(commandExtractor.getCommand())){ help();}
+                }
+                else if ("help".equalsIgnoreCase(commandExtractor.getCommand())){ help();}
                 else if ("counter".equalsIgnoreCase(commandExtractor.getCommand())) {
                     return ("There are" + " | " + greetUser.getMapSize() + " | " + "greeted users");
                 }
                 else
-                if (!commandExtractor.getCommand().isEmpty() && commandExtractor.getCommandLength() > 0) {
+                if (!commandExtractor.getCommand().isEmpty()) {
+                    if (commandExtractor.hasName())
                     return ("Invalid command type  HELP for valid commands...!");
                 }
             } catch (IllegalArgumentException e) {
                 e.printStackTrace();
             }
-
             return "";
     }
     //Define a method for help

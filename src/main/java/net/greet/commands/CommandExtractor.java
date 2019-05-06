@@ -14,6 +14,20 @@ public class CommandExtractor {
         return command[0];
     }
 
+    public  boolean hasName(){
+        if (command.length == 2) {
+            this.userName =command[1];
+        }
+        else return Boolean.parseBoolean("");
+        return true;
+    }
+    public  boolean hasLangauge(){
+        if (command.length == 3) this.lang = command[2];
+        else return Boolean.parseBoolean("");
+        return true;
+    }
+
+
     public String getUserName() {
        this.userName = command[1];
         return this.userName;

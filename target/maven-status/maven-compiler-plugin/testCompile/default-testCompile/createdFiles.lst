@@ -1,5 +1,6 @@
 greet/GreetedTest.class
 CommandProcessorTests.class
+CommandExtractorTests.class
 greeting_db_tests/greetingsDBTests.class
 greet/GreetUserTest.class
 greet/GreetTests.class

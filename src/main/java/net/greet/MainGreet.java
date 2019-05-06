@@ -25,7 +25,7 @@ public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         String enterCommand = input.nextLine();
         if (enterCommand.equalsIgnoreCase("exit")) break;
-        System.out.println(commands.greets(enterCommand));
+        System.out.println(commands.execute(enterCommand));
     }
     }
 }
