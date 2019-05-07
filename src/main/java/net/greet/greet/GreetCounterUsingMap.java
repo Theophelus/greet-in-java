@@ -11,7 +11,7 @@ public class GreetCounterUsingMap implements GreetCounter {
 
 
     public String greet(String userName, String lang) {
-        if (userName != "") greeted.setGreetedUsers(userName);
+        if (!userName.isEmpty()) greeted.setGreetedUsers(userName);
         return greets.greetUser(lang, userName);
     }
 

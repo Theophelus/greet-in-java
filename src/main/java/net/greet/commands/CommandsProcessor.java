@@ -11,15 +11,14 @@ public class CommandsProcessor {
         this.greetCounter = greetCounter;
     }
 
-    public String execute(String commands) {
-        CommandExtractor commandExtractor = new CommandExtractor(commands);
+    public String execute(String command) {
+        CommandExtractor commandExtractor = new CommandExtractor(command);
             try {
                 if ("greet".equalsIgnoreCase(commandExtractor.getCommand())) {
                     if (commandExtractor.hasName() && commandExtractor.hasLanguage()) {
                         return greetCounter.greet(commandExtractor.getUserName(), commandExtractor.getLang());
                     }
-                    else
-                    {return greetCounter.greet(commandExtractor.getUserName(), (Languages.isixhosa).toString());}
+                    if (commandExtractor.hasName()) {return greetCounter.greet(commandExtractor.getUserName(), (Languages.isixhosa).toString());}
                 }
                else if ("greeted".equalsIgnoreCase(commandExtractor.getCommand())) {
                     if (commandExtractor.hasName()) {
@@ -37,7 +36,9 @@ public class CommandsProcessor {
                         return ("All Users Have Been Deleted Successfully..!");
                     }
                 }
-                else if ("help".equalsIgnoreCase(commandExtractor.getCommand())){ help();}
+                else if ("help".equalsIgnoreCase(commandExtractor.getCommand())){
+                    help();
+                }
                 else if ("counter".equalsIgnoreCase(commandExtractor.getCommand())) {
                     return ("There are" + " | " + greetCounter.getMapSize() + " | " + "greeted users");
                 }

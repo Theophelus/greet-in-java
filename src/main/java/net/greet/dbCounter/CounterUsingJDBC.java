@@ -8,7 +8,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CounterUsingJDBC implements GreetCounter {
-
+    //Define a property to control user names
+    private String user;
     Greet newGreet = new Greet();
     //SQL
     final String  INSERT_USER_SQL = "INSERT INTO user(user_name, user_count) VALUES (?, ?)";
@@ -61,20 +62,22 @@ public class CounterUsingJDBC implements GreetCounter {
 
     @Override
     public String greet(String user_name, String lang) {
-        user_name = user_name.toLowerCase();
+        if (!user_name.isEmpty()) {
+            this.user = user_name.toLowerCase();
+        }
         try {
             //prepared statement
-            pCheckUser.setString(1, user_name);
+            pCheckUser.setString(1, this.user);
             ResultSet rs = pCheckUser.executeQuery();
             //Check if user doesn't exists
             if (!rs.next()){
-                pInsertData.setString(1, user_name);
+                pInsertData.setString(1, this.user);
                 pInsertData.setInt(2,1);
                 pInsertData.execute();
             }else {
                 int counter = rs.getInt("user_count") + 1;
                 pUpdateUser.setInt(1,  counter);
-                pUpdateUser.setString(2,user_name);
+                pUpdateUser.setString(2,this.user);
                 pUpdateUser.execute();
             }
         } catch (Exception ex) {

@@ -43,7 +43,7 @@ public class greetingsDBTests {
 
         try {
             CounterUsingJDBC counterUsingJDBC = new CounterUsingJDBC();
-            assertEquals("Molo, anele", counterUsingJDBC.greet("Anele", "isixhosa") );
+            assertEquals("Molo, anele", counterUsingJDBC.greet("anele", "isixhosa") );
         }catch (Exception e){
             System.out.println("Error: " + e);
         }
