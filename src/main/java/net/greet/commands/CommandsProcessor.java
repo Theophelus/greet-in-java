@@ -37,7 +37,7 @@ public class CommandsProcessor {
                     }
                 }
                 else if ("help".equalsIgnoreCase(commandExtractor.getCommand())){
-                    help();
+                   help();
                 }
                 else if ("counter".equalsIgnoreCase(commandExtractor.getCommand())) {
                     return ("There are" + " | " + greetCounter.getMapSize() + " | " + "greeted users");
@@ -49,7 +49,7 @@ public class CommandsProcessor {
             } catch (IllegalArgumentException e) {
                 e.printStackTrace();
             }
-            return "";
+            return command;
     }
     //Define a method for help
     public void help(){

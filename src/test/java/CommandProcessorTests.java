@@ -30,25 +30,17 @@ public class CommandProcessorTests {
         // checking that the mock was called as expected
         verify(greetUser).greet("mbali", "english");
     }
-    @Test
-    public void shouldBeAbleToReturnAllGreetedUsers() {
-        // adding behaviour to the mock
-//        when(greetUser.getGreeted()).thenReturn(anyMap());
-//        System.out.println(greetUser.getGreeted());
-        assertEquals("All greeted users |  {}" , commandsProcessor.execute("greeted"));
-        // checking that the mock was called as expected
-//        verify(greetUser).getGreeted();
-    }
+
     @Test
     public void shouldBeAbleToCheckSpecificGreetedUser() {
         // adding behaviour to the mock
-        when(greetUser.getSingleUser("anele")).thenReturn(7);
+        when(greetUser.getSingleUser("anele")).thenReturn(1);
 
-        assertEquals("anele you have been greeted: 7 time(s)",
-                    commandsProcessor.execute("greeted anele"));
+        assertEquals("anele you have been greeted: 1 time(s)", commandsProcessor.execute("greeted anele"));
         // checking that the mock was called as expected
         verify(greetUser).getSingleUser("anele");
     }
+
     @Test
     public void shouldBeAbleToClearAllUsers() {
         doNothing().when(greetUser).clearAllUsersInTheMap();

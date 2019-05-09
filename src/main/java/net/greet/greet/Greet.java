@@ -6,13 +6,13 @@ public class  Greet {
 
     public String greetUser(String language, String userName) {
 
-        if (userName != "") this.username = userName;
-
+        if (!userName.isEmpty()){
+            this.username = userName;
+        }
         try {
 
             switch (Languages.valueOf(language)) {
                 case isixhosa:
-//                    System.out.println(Languages.valueOf(language).getLang() + ", " + username);
                     return  Languages.valueOf(language).getLang() + ", " + username;
                 case english:
                     return  Languages.valueOf(language).getLang() + ", " + username;
