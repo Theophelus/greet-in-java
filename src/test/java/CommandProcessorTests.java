@@ -2,6 +2,8 @@ import net.greet.GreetCounter;
 import net.greet.commands.CommandsProcessor;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
@@ -29,6 +31,34 @@ public class CommandProcessorTests {
         assertEquals("Hello, mbali", commandsProcessor.execute("greet mbali english"));
         // checking that the mock was called as expected
         verify(greetUser).greet("mbali", "english");
+    }
+    @Test
+    public void shouldBeAbleToGreetInIsixhosa() {
+
+        // adding behaviour to the mock
+        when(greetUser.greet("ace", "isixhosa")).thenReturn("Molo, ace");
+        // acting
+        assertEquals("Molo, ace", commandsProcessor.execute("greet ace isixhosa"));
+        // checking that the mock was called as expected
+        verify(greetUser).greet("ace", "isixhosa");
+    }
+
+    @Test
+    public void shouldReturnAllUsers(){
+        greetUser.greet("anele","isixhosa");
+        // adding behaviour to the mock
+
+        HashMap<String, Integer> greetedMap = new HashMap<>();
+        greetedMap.put("Anele", 3);
+        greetedMap.put("Andre", 6);
+
+        when(greetUser.getGreeted()).thenReturn(greetedMap);
+        String expected = "Users greeted: \n" +
+                "\t Anele has been greeted 3 times\n"+
+                "\t Andre has been greeted 6 times\n";
+        assertEquals(expected, commandsProcessor.execute("greeted"));
+
+        verify(greetUser).getGreeted();
     }
 
     @Test

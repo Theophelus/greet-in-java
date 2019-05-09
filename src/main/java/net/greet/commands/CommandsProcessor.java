@@ -3,6 +3,8 @@ package net.greet.commands;
 import net.greet.GreetCounter;
 import net.greet.greet.Languages;
 
+import java.util.Map;
+
 public class CommandsProcessor {
 
     private final GreetCounter greetCounter;
@@ -24,7 +26,12 @@ public class CommandsProcessor {
                     if (commandExtractor.hasName()) {
                         return (commandExtractor.getUserName() + " " + "you have been greeted: " + greetCounter.getSingleUser(commandExtractor.getUserName()) + " " + "time(s)");
                     } else {
-                        return ("All greeted users" + " |  " + greetCounter.getGreeted());
+                        StringBuilder builder = new StringBuilder("Users greeted: \n");
+                        Map<String, Integer> greeted = greetCounter.getGreeted();
+                        for (String name : greeted.keySet()){
+                            builder.append(String.format("\t %s has been greeted %d times\n", name, greeted.get(name)));
+                        }
+                        return builder.toString();
                     }
                 }
                 else if ("clear".equalsIgnoreCase(commandExtractor.getCommand())) {

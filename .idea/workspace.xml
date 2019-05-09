@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27fb81b3-d629-4eed-ab0c-47af49aceca6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/GreetCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/GreetCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/commands/CommandsProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/commands/CommandsProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/greet/Greet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/greet/Greet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CommandProcessorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommandProcessorTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/greet-in-java-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/commands/CommandsProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="21">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#231#232#0" expanded="true" />
@@ -41,11 +39,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetCounter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CommandProcessorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="254">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,11 +63,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/MainGreet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="15" column="115" lean-forward="true" selection-start-line="15" selection-start-column="115" selection-end-line="15" selection-end-column="115" />
+            <state relative-caret-position="11">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/dbCounter/CounterUsingJDBC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="113" column="47" lean-forward="true" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -122,8 +138,9 @@
         <option value="$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/MainGreet.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/dbCounter/CounterUsingJDBC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/greet/commands/CommandsProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/greet/Greet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/greet/GreetCounter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/greet/commands/CommandsProcessor.java" />
         <option value="$PROJECT_DIR$/src/test/java/CommandProcessorTests.java" />
       </list>
     </option>
@@ -251,7 +268,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainGreet">
+  <component name="RunManager" selected="JUnit.CommandProcessorTests.shouldBeAbleToGreetInIsixhosa">
     <configuration name="MainGreet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="net.greet.MainGreet" />
       <module name="greet-in-java" />
@@ -265,30 +282,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommandProcessorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="greet-in-java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CommandProcessorTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommandProcessorTests.shouldBeAbleToCheckAllGreetedUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="greet-in-java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CommandProcessorTests" />
-      <option name="METHOD_NAME" value="shouldBeAbleToCheckAllGreetedUsers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CommandProcessorTests.shouldBeAbleToCheckSpecificGreetedUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CommandProcessorTests" />
       <option name="METHOD_NAME" value="shouldBeAbleToCheckSpecificGreetedUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandProcessorTests.shouldBeAbleToGreetInIsixhosa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="greet-in-java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommandProcessorTests" />
+      <option name="METHOD_NAME" value="shouldBeAbleToGreetInIsixhosa" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -304,6 +312,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommandProcessorTests.shouldReturnAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="greet-in-java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommandProcessorTests" />
+      <option name="METHOD_NAME" value="shouldReturnAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="V1.2__user.sql" type="OdpsQLRunnerConfigurationType" factoryName="MaxCompute SQL">
       <odps_target_file>$PROJECT_DIR$/src/main/resources/db/migration/V1.2__user.sql</odps_target_file>
       <odps_output_dir>/tmp</odps_output_dir>
@@ -314,11 +332,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommandProcessorTests.shouldBeAbleToGreetInIsixhosa" />
         <item itemvalue="Application.MainGreet" />
-        <item itemvalue="JUnit.CommandProcessorTests" />
-        <item itemvalue="JUnit.CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" />
+        <item itemvalue="JUnit.CommandProcessorTests.shouldReturnAllUsers" />
         <item itemvalue="JUnit.CommandProcessorTests.shouldBeAbleToCheckSpecificGreetedUser" />
-        <item itemvalue="JUnit.CommandProcessorTests.shouldBeAbleToCheckAllGreetedUsers" />
+        <item itemvalue="JUnit.CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -336,35 +354,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommandProcessorTests_shouldBeAbleToReturnAllGreetedUsers - 2019.05.09 at 15h 20m 43s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTests_shouldReturnAllUsers - 2019.05.09 at 17h 28m 57s.xml">
+      <configuration name="CommandProcessorTests.shouldReturnAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTests_shouldBeAbleToReturnAllGreetedUsers - 2019.05.09 at 15h 21m 02s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTests_shouldReturnAllUsers - 2019.05.09 at 17h 30m 15s.xml">
+      <configuration name="CommandProcessorTests.shouldReturnAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTests_shouldBeAbleToReturnAllGreetedUsers - 2019.05.09 at 15h 21m 50s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTests_shouldReturnAllUsers - 2019.05.09 at 17h 31m 44s.xml">
+      <configuration name="CommandProcessorTests.shouldReturnAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTests_shouldBeAbleToReturnAllGreetedUsers - 2019.05.09 at 15h 25m 11s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTests_shouldReturnAllUsers - 2019.05.09 at 17h 32m 22s.xml">
+      <configuration name="CommandProcessorTests.shouldReturnAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTests_shouldBeAbleToReturnAllGreetedUsers - 2019.05.09 at 15h 29m 50s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTests_shouldReturnAllUsers - 2019.05.09 at 17h 33m 11s.xml">
+      <configuration name="CommandProcessorTests.shouldReturnAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTests_shouldBeAbleToReturnAllGreetedUsers - 2019.05.09 at 15h 31m 20s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTests_shouldReturnAllUsers - 2019.05.09 at 17h 34m 57s.xml">
+      <configuration name="CommandProcessorTests.shouldReturnAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTests_shouldBeAbleToReturnAllGreetedUsers - 2019.05.09 at 15h 53m 12s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTests_shouldReturnAllUsers - 2019.05.09 at 17h 35m 43s.xml">
+      <configuration name="CommandProcessorTests.shouldReturnAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTests_shouldBeAbleToReturnAllGreetedUsers - 2019.05.09 at 15h 53m 54s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTests_shouldReturnAllUsers - 2019.05.09 at 17h 36m 04s.xml">
+      <configuration name="CommandProcessorTests.shouldReturnAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTests_shouldBeAbleToReturnAllGreetedUsers - 2019.05.09 at 15h 57m 22s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTests_shouldBeAbleToGreetInIsixhosa - 2019.05.09 at 17h 43m 43s.xml">
+      <configuration name="CommandProcessorTests.shouldBeAbleToGreetInIsixhosa" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTests_shouldBeAbleToReturnAllGreetedUsers - 2019.05.09 at 15h 58m 12s.xml">
-      <configuration name="CommandProcessorTests.shouldBeAbleToReturnAllGreetedUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTests_shouldBeAbleToGreetInIsixhosa - 2019.05.09 at 17h 44m 04s.xml">
+      <configuration name="CommandProcessorTests.shouldBeAbleToGreetInIsixhosa" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -393,11 +411,11 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3268366" />
-      <window_info active="true" anchor="bottom" content_ui="combo" id="Run" order="2" sideWeight="0.4996016" visible="true" weight="0.10194903" />
+      <window_info active="true" anchor="bottom" content_ui="combo" id="Run" order="2" sideWeight="0.4996016" visible="true" weight="0.32083958" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46026987" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49880478" weight="0.9550225" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49880478" weight="0.85157424" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32833582" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5011952" side_tool="true" weight="0.7466267" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -753,31 +771,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/greeting_db_tests/greetingsDBTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/commands/CommandsProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -803,23 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/dbCounter/CounterUsingJDBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="89" column="42" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/MainGreet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="115" lean-forward="true" selection-start-line="15" selection-start-column="115" selection-end-line="15" selection-end-column="115" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/greet/Greeted.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -840,10 +822,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/dbCounter/CounterUsingJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="113" column="47" lean-forward="true" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/MainGreet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/commands/CommandsProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CommandProcessorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="254">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
