@@ -10,7 +10,7 @@ import java.sql.Statement;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class greetingsDBTests {
+public class GreetingsDBTests {
 
     final String DATABASE_URL = "jdbc:h2:./target/user";
 
@@ -21,16 +21,12 @@ public class greetingsDBTests {
     @BeforeEach
     public void cleanUpDatabaseTables() {
 
-        // don't touch any code in here!!!
-
         try {
 
             try(Connection con = getConnection()) {
-                // I repeat don't touch any code in here!!!
                 Statement statement = con.createStatement();
                 statement.addBatch("DELETE FROM user");
                 statement.executeBatch();
-                // I repeat once again don't touch any code in here!!!
             }
 
         } catch(Exception ex) {
@@ -73,8 +69,6 @@ public class greetingsDBTests {
             counterUsingJDBC.greet("Anele", "english");
             counterUsingJDBC.greet("Anele", "isixhosa");
             counterUsingJDBC.greet("Nannie", "isizulu");
-//            System.out.println(CounterUsingJDBC.getMapSize());
-
             assertEquals(2, counterUsingJDBC.getMapSize());
         }catch (Exception e) {
             System.out.println("Error: " + e);
@@ -90,9 +84,9 @@ public class greetingsDBTests {
             counterUsingJDBC.greet("Anele", "isizulu");
             counterUsingJDBC.greet("Anele","isixhosa");
             counterUsingJDBC.greet("Mbali","english");
+            assertEquals(counterUsingJDBC.getMapSize(), 2);
             counterUsingJDBC.clearAllUsersInTheMap();
             assertEquals(counterUsingJDBC.getMapSize(), 0);
-//        System.out.println("HashMap successfully clear" + " " + greetUser.getGreeted());
         }catch (Exception e){
             System.out.println("Error: " + e);
         }
@@ -103,17 +97,12 @@ public class greetingsDBTests {
 
         try {
             CounterUsingJDBC counterUsingJDBC = new CounterUsingJDBC();
-            //Push names into the hashMap
             counterUsingJDBC.greet("Anele", "english");
             counterUsingJDBC.greet("Anele", "isizulu");
             counterUsingJDBC.greet("Anele","isixhosa");
             counterUsingJDBC.greet("Yolanda","english");
             counterUsingJDBC.greet("Mbali","english");
-//        System.out.println(greetUser.getGreeted());
-//        System.out.println("This user have been removed from the map" + " " + greetUser.deleteSpecificUsersInsideTheMap("Yolanda"));
             assertEquals( counterUsingJDBC.getGreeted(), counterUsingJDBC.deleteSpecificUsersInsideTheMap("Yolanda"));
-//        System.out.println("Check how many users in the map" + " " + greetUser.getMapSize());
-
         }catch (Exception e){
             System.out.println("Error: " + e);
         }

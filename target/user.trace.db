@@ -1,11 +1,11 @@
-2019-05-09 17:44:48 jdbc[3]: exception
+2019-05-09 18:00:46 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
-2019-05-09 17:44:48 jdbc[3]: exception
+2019-05-09 18:00:46 jdbc[3]: exception
 org.h2.jdbc.JdbcBatchUpdateException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:792)
-	at greeting_db_tests.greetingsDBTests.cleanUpDatabaseTables(greetingsDBTests.java:32)
+	at greeting_db_tests.GreetingsDBTests.cleanUpDatabaseTables(GreetingsDBTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,7 +81,7 @@ DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
 	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:777)
-	at greeting_db_tests.greetingsDBTests.cleanUpDatabaseTables(greetingsDBTests.java:32)
+	at greeting_db_tests.GreetingsDBTests.cleanUpDatabaseTables(GreetingsDBTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -138,17 +138,17 @@ DELETE FROM user [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2019-05-09 17:44:48 jdbc[3]: exception
+2019-05-09 18:00:46 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-09 17:44:48 jdbc[4]: exception
+2019-05-09 18:00:46 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
-2019-05-09 17:44:48 jdbc[4]: exception
+2019-05-09 18:00:46 jdbc[4]: exception
 org.h2.jdbc.JdbcBatchUpdateException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:792)
-	at greeting_db_tests.greetingsDBTests.cleanUpDatabaseTables(greetingsDBTests.java:32)
+	at greeting_db_tests.GreetingsDBTests.cleanUpDatabaseTables(GreetingsDBTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -224,7 +224,7 @@ DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
 	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:777)
-	at greeting_db_tests.greetingsDBTests.cleanUpDatabaseTables(greetingsDBTests.java:32)
+	at greeting_db_tests.GreetingsDBTests.cleanUpDatabaseTables(GreetingsDBTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -281,17 +281,17 @@ DELETE FROM user [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2019-05-09 17:44:48 jdbc[5]: exception
+2019-05-09 18:00:46 jdbc[5]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-09 17:44:48 jdbc[6]: exception
+2019-05-09 18:00:46 jdbc[6]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
-2019-05-09 17:44:48 jdbc[6]: exception
+2019-05-09 18:00:46 jdbc[6]: exception
 org.h2.jdbc.JdbcBatchUpdateException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:792)
-	at greeting_db_tests.greetingsDBTests.cleanUpDatabaseTables(greetingsDBTests.java:32)
+	at greeting_db_tests.GreetingsDBTests.cleanUpDatabaseTables(GreetingsDBTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -367,7 +367,7 @@ DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
 	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:777)
-	at greeting_db_tests.greetingsDBTests.cleanUpDatabaseTables(greetingsDBTests.java:32)
+	at greeting_db_tests.GreetingsDBTests.cleanUpDatabaseTables(GreetingsDBTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -424,17 +424,17 @@ DELETE FROM user [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2019-05-09 17:44:48 jdbc[7]: exception
+2019-05-09 18:00:46 jdbc[7]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-09 17:44:48 jdbc[8]: exception
+2019-05-09 18:00:46 jdbc[8]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
-2019-05-09 17:44:48 jdbc[8]: exception
+2019-05-09 18:00:46 jdbc[8]: exception
 org.h2.jdbc.JdbcBatchUpdateException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:792)
-	at greeting_db_tests.greetingsDBTests.cleanUpDatabaseTables(greetingsDBTests.java:32)
+	at greeting_db_tests.GreetingsDBTests.cleanUpDatabaseTables(GreetingsDBTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -510,7 +510,7 @@ DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
 	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:777)
-	at greeting_db_tests.greetingsDBTests.cleanUpDatabaseTables(greetingsDBTests.java:32)
+	at greeting_db_tests.GreetingsDBTests.cleanUpDatabaseTables(GreetingsDBTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -567,17 +567,17 @@ DELETE FROM user [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2019-05-09 17:44:48 jdbc[9]: exception
+2019-05-09 18:00:46 jdbc[9]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]
-2019-05-09 17:44:48 jdbc[10]: exception
+2019-05-09 18:00:46 jdbc[10]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
-2019-05-09 17:44:48 jdbc[10]: exception
+2019-05-09 18:00:46 jdbc[10]: exception
 org.h2.jdbc.JdbcBatchUpdateException: Table "USER" not found; SQL statement:
 DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:792)
-	at greeting_db_tests.greetingsDBTests.cleanUpDatabaseTables(greetingsDBTests.java:32)
+	at greeting_db_tests.GreetingsDBTests.cleanUpDatabaseTables(GreetingsDBTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -653,7 +653,7 @@ DELETE FROM user [42102-199]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
 	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
 	at org.h2.jdbc.JdbcStatement.executeBatch(JdbcStatement.java:777)
-	at greeting_db_tests.greetingsDBTests.cleanUpDatabaseTables(greetingsDBTests.java:32)
+	at greeting_db_tests.GreetingsDBTests.cleanUpDatabaseTables(GreetingsDBTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -710,6 +710,6 @@ DELETE FROM user [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-2019-05-09 17:44:48 jdbc[11]: exception
+2019-05-09 18:00:46 jdbc[11]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
 INSERT INTO user(user_name, user_count) VALUES (?, ?) [42102-199]

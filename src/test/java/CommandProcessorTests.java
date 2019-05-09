@@ -1,7 +1,6 @@
 import net.greet.GreetCounter;
 import net.greet.commands.CommandsProcessor;
 import org.junit.jupiter.api.Test;
-
 import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -15,7 +14,7 @@ public class CommandProcessorTests {
     @Test
     public void shouldBeAbleToCheckGreatDefaultLang(){
 
-        // adding behaviour to the mock
+        // adding behavi
         when(greetUser.greet("mbali", "isixhosa")).thenReturn("Molo, mbali");
         // acting
         assertEquals("Molo, mbali", commandsProcessor.execute("greet mbali"));
@@ -32,9 +31,9 @@ public class CommandProcessorTests {
         // checking that the mock was called as expected
         verify(greetUser).greet("mbali", "english");
     }
+
     @Test
     public void shouldBeAbleToGreetInIsixhosa() {
-
         // adding behaviour to the mock
         when(greetUser.greet("ace", "isixhosa")).thenReturn("Molo, ace");
         // acting
@@ -45,9 +44,7 @@ public class CommandProcessorTests {
 
     @Test
     public void shouldReturnAllUsers(){
-        greetUser.greet("anele","isixhosa");
         // adding behaviour to the mock
-
         HashMap<String, Integer> greetedMap = new HashMap<>();
         greetedMap.put("Anele", 3);
         greetedMap.put("Andre", 6);
