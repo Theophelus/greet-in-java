@@ -94,8 +94,9 @@ public class CounterUsingJDBC implements GreetCounter {
             //Get results
             ResultSet rs = pGetAllUsers.executeQuery();
             //Check every element in the Table if found push in the map..!
-            while (rs.next())
+            while (rs.next()) {
                 storeData.put(rs.getString("user_name"), rs.getInt("user_count"));
+            }
 
         } catch (SQLException e) {
             System.out.println("Error: " + e);
@@ -109,17 +110,21 @@ public class CounterUsingJDBC implements GreetCounter {
             pGetSingleUser.setString(1,user_name);
             ResultSet rs = pGetSingleUser.executeQuery();
             //If the user exists get its counter
-            if (rs.next()) return rs.getInt("user_count");
+            if (rs.next()) {
+                return rs.getInt("user_count");
+            }
         }catch (SQLException e) {System.out.println("Error: " + e);}
         return 0;
     }
 
     @Override
     public short getMapSize(){
+
         try {
             ResultSet rs = pGetAll.executeQuery();
-                if (rs.next())
-                return (short) rs.getInt("user_count");
+                if (rs.next()) {
+                    return (short) rs.getInt("user_count");
+                }
         }catch (SQLException ex){
             System.out.println("Error: " + ex);
         }

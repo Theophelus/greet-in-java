@@ -31,26 +31,38 @@ public class CommandProcessorTests {
         verify(greetUser).greet("mbali", "english");
     }
     @Test
-    public void shouldBeAbleToCheckAllGreetedUsers() {
-        assertEquals("All greeted users | " + " " + greetUser.getGreeted(), commandsProcessor.execute("greeted"));
+    public void shouldBeAbleToReturnAllGreetedUsers() {
+        // adding behaviour to the mock
+//        when(greetUser.getGreeted()).thenReturn(anyMap());
+//        System.out.println(greetUser.getGreeted());
+        assertEquals("All greeted users |  {}" , commandsProcessor.execute("greeted"));
+        // checking that the mock was called as expected
+//        verify(greetUser).getGreeted();
     }
     @Test
     public void shouldBeAbleToCheckSpecificGreetedUser() {
-
+        // adding behaviour to the mock
         when(greetUser.getSingleUser("anele")).thenReturn(7);
 
         assertEquals("anele you have been greeted: 7 time(s)",
                     commandsProcessor.execute("greeted anele"));
-
+        // checking that the mock was called as expected
         verify(greetUser).getSingleUser("anele");
     }
     @Test
     public void shouldBeAbleToClearAllUsers() {
+        doNothing().when(greetUser).clearAllUsersInTheMap();
         assertEquals("All Users Have Been Deleted Successfully..!", commandsProcessor.execute("clear"));
+        verify(greetUser).clearAllUsersInTheMap();
     }
     @Test
     public void shouldBeAbleToClearSpecificUser() {
+        // adding behaviour to the mock
+        when(greetUser.deleteSpecificUsersInsideTheMap("anele")).thenReturn(anyMap());
+
         assertEquals("anele Have Been Deleted Successfully..!", commandsProcessor.execute("clear anele"));
+        // checking that the mock was called as expected
+        verify(greetUser).deleteSpecificUsersInsideTheMap("anele");
     }
     @Test
     public void shouldBeAbleToGetTheCounter(){

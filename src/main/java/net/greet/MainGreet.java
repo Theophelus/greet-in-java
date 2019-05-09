@@ -22,7 +22,7 @@ public static void main(String[] args){
     System.out.println("..");
     //Define a variable to control the loop
     while (true){
-        System.out.print("Please enter a Command =>  ");
+        System.out.print("Please enter a Command => ");
         Scanner input = new Scanner(System.in);
         String enterCommand = input.nextLine();
         if (enterCommand.equalsIgnoreCase("exit")) {
