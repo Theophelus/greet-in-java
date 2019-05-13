@@ -44,6 +44,6 @@ The target folder will contain all the jar files your project depends on, after 
 ## Run it
 
 Add all the jar files in the target folder in your applications classpath like this:
-## java -cp .:target/*: net.greet.mainGreet
+## java -cp .:target/*: net.greet.MainGreet
 
 
